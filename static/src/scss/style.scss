@@ -1985,18 +1985,61 @@ td .o_field_widget .text-bg-success {
    padding-top: unset !important;
     }
 
-.o_input{
-        padding: inherit !important;
+// ============================================================================
+// Input Fields - Shadcn Inspired
+// ============================================================================
+
+.o_input {
+    padding: 2px 12px !important;
+    border-radius: 4px !important;
+    border: 1px solid #d1d5db !important; // gray-300
+    background-color: white !important;
+    transition: all 0.2s ease !important;
+
+    &::placeholder {
+        color: #9ca3af !important; // light grey (gray-400)
     }
 
-// ============================================================================
-// Select Input - Shadcn Inspired
-// ============================================================================
+    // Focus state - ring effect like shadcn
+    &:focus {
+        outline: none !important;
+        border-color: $secondary_color !important; // dark grey
+        box-shadow: 0 0 0 3px rgba(52, 53, 52, 0.1) !important; // subtle ring
+    }
 
-select.o_input {
-	border-radius: 4px !important;
+    // Hover state
+    &:hover:not(:focus) {
+        border-color: #9ca3af !important; // gray-400
+    }
 }
 
+// Exclude search inputs - will be styled separately
+.o_searchview_input_container .o_input {
+    padding: inherit !important;
+    border-radius: inherit !important;
+    border: inherit !important;
+    background-color: inherit !important;
+    transition: inherit !important;
+
+    &::placeholder {
+        color: inherit !important;
+    }
+
+    &:focus {
+        outline: inherit !important;
+        border-color: inherit !important;
+        box-shadow: inherit !important;
+    }
+
+    &:hover:not(:focus) {
+        border-color: inherit !important;
+    }
+}
+
+// Settings pane checkbox margin
+.o_setting_right_pane .o-checkbox {
+    margin-left: 20px;
+}
 
 .o_field_property_definition .o_field_property_definition_type .o_input_dropdown input {
     background-repeat: no-repeat;
