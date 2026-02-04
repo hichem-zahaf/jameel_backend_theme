@@ -410,13 +410,132 @@ body {
 	background-color: transparent !important;
 }
 
+// ============================================================================
+// Table Design - Shadcn Inspired
+// ============================================================================
+
 .o_list_table {
+	border-collapse: separate !important;
+	border-spacing: 0 !important;
+	border-radius: 8px !important;
+	overflow: hidden !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+
+	// Table header styling
 	thead {
+		background-color: #f9fafb !important; // gray-50
+
 		tr {
 			th {
-				color: black;
+				color: $secondary_color !important;
+				font-size: 12px !important;
+				font-weight: 600 !important;
+				letter-spacing: 0.025em !important;
+				text-transform: uppercase !important;
+				padding: 12px 16px !important;
+				border-bottom: 1px solid #e5e7eb !important; // gray-200
+				background-color: transparent !important;
+
+				// Sortable columns
+				&.o_column_sortable {
+					transition: all 0.2s ease !important;
+
+					&:hover {
+						background-color: rgba(217, 157, 42, 0.05) !important;
+					}
+				}
+
+				// Sort icon styling
+				.o_list_sortable_caret {
+					color: $primary_color !important;
+				}
 			}
 		}
+	}
+
+	// Table body styling
+	tbody {
+		tr {
+			transition: all 0.2s ease !important;
+
+			td {
+				padding: 12px 16px !important;
+				border-bottom: 1px solid #f3f4f6 !important; // gray-100
+				color: #374151 !important; // gray-700
+				font-size: 13px !important;
+				vertical-align: middle !important;
+
+				// First column (selection/checkbox) - add left spacing
+				&.o_list_record_selector {
+					padding-left: 21px !important; // 16px + 5px extra space
+				}
+
+				// Links in cells
+				a {
+					color: $secondary_color !important;
+					font-weight: 500 !important;
+					transition: color 0.2s ease !important;
+
+					&:hover {
+						color: $primary_color !important;
+					}
+				}
+			}
+
+			// Row hover effect - uniform light grey
+			&:hover td {
+				background-color: #f9fafb !important; // gray-50 - uniform light grey
+			}
+
+			// Selected row
+			&.o_selected_row td {
+				background-color: rgba(217, 157, 42, 0.08) !important;
+			}
+		}
+	}
+
+	// Table footer
+	tfoot {
+		tr {
+			td {
+				padding: 16px !important;
+				background-color: #f9fafb !important; // gray-50
+				border-top: 1px solid #e5e7eb !important; // gray-200
+			}
+		}
+	}
+}
+
+// List renderer wrapper
+.o_list_renderer {
+	border-radius: 8px !important;
+	overflow: hidden !important;
+
+	.table-responsive {
+		border-radius: 8px !important;
+	}
+}
+
+// Remove default striped effect
+.o_list_table.table-striped {
+	tbody tr {
+		background-color: transparent !important;
+	}
+}
+
+// Checkbox styling in tables
+.o_list_record_selector .form-check-input {
+	border-color: #d1d5db !important; // gray-300
+	cursor: pointer !important;
+	transition: all 0.2s ease !important;
+
+	&:checked {
+		background-color: $primary_color !important;
+		border-color: $primary_color !important;
+	}
+
+	&:hover {
+		border-color: $primary_color !important;
 	}
 }
 
