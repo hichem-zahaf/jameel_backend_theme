@@ -1231,6 +1231,38 @@ select.o_field_widget.o_input.o_input_dropdown .o_dropdown_button {
 }
 
 // ============================================================================
+// Settings Section Titles - Shadcn Inspired
+// ============================================================================
+
+.o_base_settings_view .o_form_renderer .o_setting_container .settings > .app_settings_block h2,
+.o_base_settings_view .o_form_renderer .o_setting_container .settings > .app_settings_block .h2,
+.o_form_renderer .o_setting_container .settings>.app_settings_block h2,
+.o_form_renderer .o_setting_container .settings>.app_settings_block .h2 {
+	// Clean white background
+	background-color: white !important;
+
+	// Gold accent bar on left
+	border-left: 3px solid $primary_color !important;
+	border-bottom: 1px solid #e5e7eb !important; // subtle bottom border
+	border-radius: 6px 6px 0 0 !important;
+
+	// Typography - dark grey, uppercase
+	color: $secondary_color !important;
+	font-size: 13px !important;
+	font-weight: 600 !important;
+	letter-spacing: 0.05em !important;
+	text-transform: uppercase !important;
+
+	// Spacing
+	margin: 1.5rem 0 0.75rem 0 !important;
+	padding: 0.875rem 1rem 0.875rem 1.25rem !important;
+
+	// Subtle shadow
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+	transition: all 0.2s ease !important;
+}
+
+// ============================================================================
 // Settings Sidebar - Shadcn Inspired Design
 // ============================================================================
 
