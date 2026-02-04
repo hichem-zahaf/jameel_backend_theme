@@ -2061,6 +2061,100 @@ td .o_field_widget .text-bg-success {
 	align-self: stretch !important;
 }
 
+// ============================================================================
+// Navigation Icons - Shadcn Inspired
+// ============================================================================
+
+// Pager buttons (previous/next)
+.o_cp_pager .btn-secondary {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 36px !important;
+	height: 36px !important;
+	border: 1px solid #d1d5db !important; // gray-300
+	border-radius: 8px !important;
+	background-color: white !important;
+	color: #6b7280 !important; // gray-500
+	transition: all 0.2s ease !important;
+	position: relative !important;
+	overflow: hidden !important;
+
+	&:hover:not(:disabled) {
+		border-color: $primary_color !important;
+		color: $primary_color !important;
+		background-color: rgba(217, 157, 42, 0.05) !important;
+		transform: translateY(-1px);
+	}
+
+	&:active:not(:disabled) {
+		transform: translateY(0);
+	}
+
+	&:disabled {
+		opacity: 0.4 !important;
+		cursor: not-allowed !important;
+	}
+
+	// Icon styling
+	i {
+		font-size: 14px !important;
+	}
+}
+
+// View switcher buttons
+.o_cp_switch_buttons .btn-secondary {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 36px !important;
+	height: 36px !important;
+	border: 1px solid #d1d5db !important; // gray-300
+	border-radius: 8px !important;
+	background-color: white !important;
+	color: #6b7280 !important; // gray-500
+	transition: all 0.2s ease !important;
+	position: relative !important;
+	overflow: hidden !important;
+
+	&:hover {
+		border-color: $primary_color !important;
+		color: $primary_color !important;
+		background-color: rgba(217, 157, 42, 0.05) !important;
+		transform: translateY(-1px);
+	}
+
+	// Active state
+	&.active {
+		background-color: $primary_color !important;
+		border-color: $primary_color !important;
+		color: white !important;
+		box-shadow: 0 2px 8px rgba(217, 157, 42, 0.25) !important;
+	}
+
+	&.active:hover {
+		background-color: lighten($primary_color, 5%) !important;
+		border-color: lighten($primary_color, 5%) !important;
+	}
+
+	// Icon styling
+	i {
+		font-size: 14px !important;
+	}
+}
+
+// Pager counter styling
+.o_pager_counter {
+	font-size: 13px !important;
+	color: $secondary_color !important;
+	font-weight: 500 !important;
+
+	.o_pager_value {
+		color: $primary_color !important;
+		font-weight: 600 !important;
+	}
+}
+
 .o_mobile_menu_toggle .oi.oi-panel-right {
 	color: #111;
 	margin-top: 5px;
