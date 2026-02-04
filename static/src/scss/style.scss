@@ -2629,3 +2629,212 @@ td .o_field_widget .text-bg-success {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+// ============================================================================
+// Chatter / Notification Panel - Shadcn Inspired Redesign
+// ============================================================================
+
+// 1. Remove underline hover effect from btn-link in o-mail-Chatter-top
+.o-mail-Chatter-top .btn-link {
+    &::before {
+        display: none !important;
+    }
+
+    &:hover {
+        text-decoration: none !important;
+    }
+
+    // Icon-only buttons - clean, minimal hover
+    .oi-search,
+    .fa-paperclip,
+    .fa-user-o {
+        transition: all 0.2s ease !important;
+    }
+
+    &:hover {
+        .oi-search,
+        .fa-paperclip,
+        .fa-user-o {
+            color: $primary_color !important;
+            transform: scale(1.1);
+        }
+    }
+}
+
+// 2. Special design for follow/unfollow button
+.o-mail-Chatter-follow {
+    position: relative !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.025em !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    overflow: visible !important;
+
+    // Following state (green/active)
+    .btn.text-success & {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+        color: white !important;
+        box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25) !important;
+
+        &:hover {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35) !important;
+            transform: translateY(-1px) !important;
+        }
+
+        &:active {
+            transform: translateY(0) !important;
+        }
+    }
+
+    // Unfollow state (default/inactive)
+    .btn:not(.text-success) & {
+        background: #f3f4f6 !important;
+        color: #6b7280 !important;
+        border: 1px solid #e5e7eb !important;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+
+        &:hover {
+            background: $primary_color !important;
+            color: white !important;
+            border-color: $primary_color !important;
+            box-shadow: 0 4px 12px rgba(217, 157, 42, 0.3) !important;
+            transform: translateY(-1px) !important;
+        }
+
+        &:active {
+            transform: translateY(0) !important;
+        }
+    }
+}
+
+// 3. Minimal yet modern design for notification/message
+.o-mail-Message-core {
+    padding: 16px 20px !important;
+    border-radius: 12px !important;
+    background: white !important;
+    border: 1px solid #e5e7eb !important;
+    transition: all 0.2s ease !important;
+    position: relative !important;
+
+    // Subtle left accent for self-authored messages
+    .o-selfAuthored & {
+        border-left: 3px solid $primary_color !important;
+        background: linear-gradient(to right, rgba(217, 157, 42, 0.02) 0%, white 50%) !important;
+    }
+
+    // Hover effect
+    .o-mail-Message:hover & {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+        border-color: #d1d5db !important;
+    }
+
+    // Message header styling
+    .o-mail-Message-header {
+        margin-bottom: 8px !important;
+
+        .o-mail-Message-author {
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            color: $secondary_color !important;
+
+            strong {
+                color: $secondary_color !important;
+            }
+
+            // Remove underline on hover
+            &.o-hover-text-underline:hover {
+                text-decoration: none !important;
+                color: $primary_color !important;
+            }
+        }
+
+        .o-mail-Message-date {
+            color: #9ca3af !important; // gray-400
+            font-size: 12px !important;
+            font-weight: 500 !important;
+        }
+    }
+
+    // Message content
+    .o-mail-Message-content {
+        .o-mail-Message-body {
+            color: #374151 !important; // gray-700
+            font-size: 14px !important;
+            line-height: 1.6 !important;
+
+            &.o-note {
+                background: transparent !important;
+                padding: 0 !important;
+                border: none !important;
+
+                p {
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+
+    // Message actions (hover buttons)
+    .o-mail-Message-actions {
+        opacity: 0 !important;
+        transition: opacity 0.2s ease !important;
+
+        .btn {
+            background: white !important;
+            border: 1px solid #e5e7eb !important;
+            color: #6b7280 !important;
+            border-radius: 6px !important;
+            padding: 6px 10px !important;
+            transition: all 0.2s ease !important;
+
+            &:hover {
+                background: $primary_color !important;
+                border-color: $primary_color !important;
+                color: white !important;
+            }
+
+            i {
+                font-size: 14px !important;
+            }
+        }
+    }
+
+    // Show actions on message hover
+    .o-mail-Message:hover .o-mail-Message-actions {
+        opacity: 1 !important;
+    }
+}
+
+// Message avatar - modern rounded design
+.o-mail-Message-avatarContainer {
+    .o-mail-Message-avatar {
+        border-radius: 12px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+        transition: all 0.2s ease !important;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+        }
+    }
+}
+
+// Date separator styling
+.o-mail-DateSection {
+    .o-discuss-separator {
+        border-color: #e5e7eb !important;
+        opacity: 0.5 !important;
+    }
+
+    span {
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.05em !important;
+        color: #9ca3af !important;
+    }
+}
