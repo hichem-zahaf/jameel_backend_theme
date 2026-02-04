@@ -921,13 +921,6 @@ td {
 	margin-bottom: 0px !important;
 }
 
-.bg-light,
-.o-mail-DiscussSidebar {
-	background-size: cover;
-	background-position: center;
-	background-image: linear-gradient(#eff8f3c2, #f2ebebd4), url(/jameel_backend_theme/static/src/img/sidebar.jpg);
-}
-
 .o_DiscussSidebarMailbox {
 	color: #efefef;
 	padding: 10px 15px;
@@ -986,10 +979,16 @@ td {
 	letter-spacing: 1px;
 }
 
+// ============================================================================
+// Thread View - Clean No-Shadow Design
+// ============================================================================
+
 .o-mail-Thread {
-	margin: 30px;
-	box-shadow: 0px 0px 6px 4px #d9d7d769 !important;
-	border-radius: 5px;
+	margin: 0 !important;
+	padding: 16px !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	background-color: transparent !important;
 }
 
 .o_Message_prettyBody {
