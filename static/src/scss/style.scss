@@ -2842,7 +2842,7 @@ s
 // Link Buttons - From Right Animation
 // ============================================================================
 
-.btn-link:not(.o-mail-ActivityButton) {
+.btn-link:not(.o-mail-ActivityButton):not(.o-mail-MessagingMenu-headerFilter) {
 	position: relative !important;
 	color: $secondary_color !important;
 	font-weight: 700 !important;
@@ -3786,32 +3786,44 @@ td .o_field_widget .text-bg-success {
 
     // Header with filter buttons
     .o-mail-MessagingMenu-header {
-        padding: 12px 16px !important;
+        padding: 12px 16px 0 16px !important;
         border-bottom: 1px solid #e5e7eb !important;
         background: #f9fafb !important;
-        gap: 4px !important;
+        gap: 0 !important;
 
-        // Filter buttons (All, Chats, Channels)
+        // Filter buttons (All, Chats, Channels) - Browser tab style
         .o-mail-MessagingMenu-headerFilter {
             font-size: 13px !important;
             font-weight: 500 !important;
             color: #6b7280 !important;
-            padding: 8px 14px !important;
-            border-radius: 8px !important;
+            padding: 10px 18px !important;
+            border-radius: 8px 8px 0 0 !important;
             transition: all 0.2s ease !important;
             background: transparent !important;
-            border: none !important;
+            border: 1px solid transparent !important;
+            border-bottom: none !important;
+            position: relative !important;
+            top: 1px !important;
+
+            // Remove btn-link :before pseudo-element
+            &::before {
+                display: none !important;
+            }
 
             &:hover {
-                background: #f3f4f6 !important;
+                background: #e5e7eb !important;
                 color: $secondary_color !important;
             }
 
-            // Active state
+            // Active state - connects to content below
             &.o-active {
-                background: $primary_color !important;
-                color: white !important;
+                background: white !important;
+                color: $secondary_color !important;
                 font-weight: 600 !important;
+                border-color: #e5e7eb !important;
+                border-bottom: 1px solid white !important;
+                margin-bottom: -1px !important;
+                z-index: 1 !important;
             }
         }
     }
