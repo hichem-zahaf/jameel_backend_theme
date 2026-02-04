@@ -656,13 +656,6 @@ body {
 	background-color: $primary_color !important;
 }
 
-.o_main_navbar {
-	height: auto;
-	padding: 8px 0px;
-	padding-left: 1px;
-	background: transparent !important;
-}
-
 .o_field_number {
 	color: $secondary_color  !important;
 	font-size: 15px !important;
@@ -1354,10 +1347,6 @@ s
 	&:active {
 		box-shadow: 0 2px 8px rgba(52, 53, 52, 0.2);
 	}
-}
-
-.o_main_navbar .o_menu_sections {
-	margin: auto;
 }
 
 .o_Message_content *:not(li) {
@@ -2258,7 +2247,7 @@ s
 // Link Buttons - From Right Animation
 // ============================================================================
 
-.btn-link {
+.btn-link:not(.o-mail-ActivityButton) {
 	position: relative !important;
 	color: $secondary_color !important;
 	font-weight: 700 !important;
@@ -2430,11 +2419,6 @@ s
 	}
 }
 
-.o_main_navbar .dropdown-toggle {
-	color: #3e5f61 !important;
-}
-
-
 .o_form_renderer .o_setting_container .settings>.app_settings_block h2,
 .o_form_renderer .o_setting_container .settings>.app_settings_block .h2 {
 	color: initial !important;
@@ -2446,17 +2430,12 @@ s
 }
 
 
-.o_menu_sections.d-none.d-md-flex.flex-grow-1.flex-shrink-1 {
-	color: #173e43 !important
-}
-
-
 .o_MessagingMenu_counter.badge {
-	background-color: darkcyan !important;
+	background-color: $primary_color !important;
 }
 
 .o_ActivityMenuView_counter.badge {
-	background-color: darkcyan !important;
+	background-color: $primary_color !important;
 }
 
 
@@ -2529,12 +2508,6 @@ strong {
 	display: flex;
 	justify-content: space-between;
 }
-
-.o_main_navbar .o_menu_systray {
-	align-items: center;
-	display: flex;
-}
-
 
 .dropdown-item.o_nav_entry.d-none {
 	margin-top: 7px;
@@ -2630,11 +2603,6 @@ td .o_field_widget .text-bg-success {
 }
 
 // Duplicate .btn-secondary removed - using unified definition above
-
-.o_main_navbar .o_menu_sections .o_nav_entry,
-.o_main_navbar .o_menu_sections .dropdown-toggle {
-	background-color: transparent !important;
-}
 
 .o_cp_searchview .dropdown {
 	margin-top: 0 !important;
@@ -2838,10 +2806,6 @@ td .o_field_widget .text-bg-success {
 	margin-right: -10px !important;
 }
 
-.o_main_navbar .o_menu_sections .o_nav_entry {
-// 	color: #173e43;
-}
-
 .o_menu_sections .o-dropdown.show {
 	background: #e0edfa;
 }
@@ -2982,11 +2946,6 @@ td .o_field_widget .text-bg-success {
     background-position-x: 0px;
     background-position-y: 3px;
     background-size: 20px;
-}
-
-
- .o_main_navbar .o_nav_entry, .o_main_navbar .dropdown-toggle {
-    color: #3e5f61 !important;
 }
 
 

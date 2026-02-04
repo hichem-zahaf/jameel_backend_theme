@@ -1,21 +1,271 @@
-.o_main_navbar{
-background-color:$primary_color !important;}
+// ============================================================================
+// Main Navbar - Modern Minimal Design
+// ============================================================================
 
-.o-mail-DiscussSystray-class > button {
-  color: black !important;
+.o_main_navbar {
+	background-color: white !important;
+	border-bottom: 1px solid #e5e7eb !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06) !important;
+	height: 56px !important;
+	padding: 0 16px !important;
+	transition: all 0.2s ease !important;
+
+	// Apps menu button (grid icon)
+	.o_navbar_apps_menu .dropdown-toggle {
+		background-color: transparent !important;
+		border: none !important;
+		color: $secondary_color !important;
+		padding: 8px !important;
+		border-radius: 6px !important;
+		transition: all 0.15s ease !important;
+
+		&:hover {
+			background-color: rgba(217, 157, 42, 0.08) !important;
+			color: $primary_color !important;
+		}
+
+		.oi {
+			font-size: 20px !important;
+		}
+	}
+
+	// Brand/logo
+	.o_menu_brand {
+		color: $secondary_color !important;
+		font-size: 18px !important;
+		font-weight: 700 !important;
+		letter-spacing: -0.01em !important;
+		padding: 8px 12px !important;
+		border-radius: 6px !important;
+		transition: all 0.15s ease !important;
+		text-decoration: none !important;
+
+		&:hover {
+			background-color: rgba(217, 157, 42, 0.08) !important;
+			color: $primary_color !important;
+		}
+	}
+
+	// Menu sections (navigation items)
+	.o_menu_sections {
+		margin: 0 16px !important;
+
+		.o_nav_entry,
+		.dropdown-toggle {
+			background-color: transparent !important;
+			color: #6b7280 !important;
+			font-size: 14px !important;
+			font-weight: 500 !important;
+			padding: 8px 12px !important;
+			border-radius: 6px !important;
+			transition: all 0.15s ease !important;
+			border: none !important;
+
+			&:hover {
+				background-color: rgba(217, 157, 42, 0.08) !important;
+				color: $primary_color !important;
+			}
+
+			&.show,
+			&.active {
+				background-color: rgba(217, 157, 42, 0.12) !important;
+				color: $primary_color !important;
+			}
+		}
+	}
+
+	// Systray (right side icons and buttons)
+	.o_menu_systray {
+		gap: 4px !important;
+
+		// All buttons in systray
+		> div,
+		> button {
+			color: #6b7280 !important;
+			transition: all 0.15s ease !important;
+
+			&:hover {
+				color: $primary_color !important;
+			}
+		}
+
+		// Dropdown toggle buttons
+		.dropdown-toggle {
+			background-color: transparent !important;
+			border: none !important;
+			padding: 8px !important;
+			border-radius: 6px !important;
+			color: #6b7280 !important;
+
+			&:hover {
+				background-color: rgba(217, 157, 42, 0.08) !important;
+				color: $primary_color !important;
+			}
+
+			// Icons
+			.fa,
+			.oi {
+				font-size: 16px !important;
+				color: inherit !important;
+			}
+
+			// Badge counters
+			.badge {
+				background-color: $primary_color !important;
+				color: white !important;
+				font-size: 10px !important;
+				font-weight: 600 !important;
+				min-width: 18px !important;
+				height: 18px !important;
+				padding: 0 5px !important;
+			}
+		}
+
+		// Company switcher
+		.o_switch_company_menu .dropdown-toggle {
+			padding: 8px 12px !important;
+			gap: 6px !important;
+
+			.oe_topbar_name {
+				color: #6b7280 !important;
+				font-size: 13px !important;
+				font-weight: 500 !important;
+			}
+
+			&:hover .oe_topbar_name {
+				color: $primary_color !important;
+			}
+		}
+
+		// User menu
+		.o_user_menu .dropdown-toggle {
+			padding: 4px 8px !important;
+			gap: 8px !important;
+
+			.o_user_avatar {
+				width: 32px !important;
+				height: 32px !important;
+				border-radius: 50% !important;
+				border: 2px solid #e5e7eb !important;
+				transition: all 0.15s ease !important;
+			}
+
+			&:hover .o_user_avatar {
+				border-color: $primary_color !important;
+			}
+
+			.oe_topbar_name {
+				color: #6b7280 !important;
+				font-size: 13px !important;
+				font-weight: 500 !important;
+
+				mark {
+					background-color: transparent !important;
+					color: #9ca3af !important;
+					font-size: 11px !important;
+				}
+			}
+
+			&:hover .oe_topbar_name {
+				color: $primary_color !important;
+			}
+		}
+
+		// Discuss systray
+		.o-mail-DiscussSystray-class > button {
+			color: #6b7280 !important;
+			background-color: transparent !important;
+
+			&:hover {
+				background-color: rgba(217, 157, 42, 0.08) !important;
+				color: $primary_color !important;
+			}
+		}
+
+		// Activity menu
+		.o-mail-ActivityMenu-counter,
+		.o-mail-MessagingMenu-counter {
+			background-color: $primary_color !important;
+			color: white !important;
+		}
+
+		// Debug manager
+		.o_debug_manager > button {
+			color: #6b7280 !important;
+			background-color: transparent !important;
+
+			&:hover {
+				background-color: rgba(217, 157, 42, 0.08) !important;
+				color: $primary_color !important;
+			}
+		}
+
+		// Menu toggle (more button)
+		.o_menu_toggle,
+		.o_menu_sections_more > button {
+			color: #6b7280 !important;
+			background-color: transparent !important;
+
+			&:hover {
+				background-color: rgba(217, 157, 42, 0.08) !important;
+				color: $primary_color !important;
+			}
+		}
+	}
+
+	// Mobile menu toggle
+	.o_mobile_menu_toggle {
+		color: #6b7280 !important;
+		background-color: transparent !important;
+		border: none !important;
+		padding: 8px !important;
+
+		&:hover {
+			background-color: rgba(217, 157, 42, 0.08) !important;
+			color: $primary_color !important;
+		}
+
+		.o_burger_menu_avatar {
+			width: 32px !important;
+			height: 32px !important;
+		}
+	}
+
+	// Dropdown menus attached to navbar
+	.o-dropdown--menu {
+		background-color: white !important;
+		border: 1px solid #e5e7eb !important;
+		border-radius: 8px !important;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+		padding: 6px !important;
+		margin-top: 4px !important;
+
+		.dropdown-item {
+			color: $secondary_color !important;
+			font-size: 13px !important;
+			font-weight: 500 !important;
+			padding: 8px 12px !important;
+			border-radius: 6px !important;
+			transition: all 0.1s ease !important;
+
+			&:hover {
+				background-color: rgba(217, 157, 42, 0.08) !important;
+				color: $primary_color !important;
+			}
+
+			&.active,
+			&.selected {
+				background-color: rgba(217, 157, 42, 0.12) !important;
+				color: $primary_color !important;
+			}
+		}
+	}
 }
-.o_menu_systray > button {
-  color: black !important;
+
+// ============================================================================
+// Navbar Dropdown Arrows - Hide Default Carets
+// ============================================================================
+
+.o_main_navbar .dropdown-toggle::after {
+	display: none !important;
 }
-.o_debug_manager > button{
-    color: black !important;
-}
-.o_menu_sections_more > button{
-    color: black !important;
-}
-.o_menu_toggle{
-    color: black !important;
-    }
-.o_last_breadcrumb_item{
-    color: black !important;
-    }
