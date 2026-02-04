@@ -1691,6 +1691,34 @@ select.o_field_widget.o_input.o_input_dropdown .o_dropdown_button {
 	}
 }
 
+// Documentation links styling
+.o_doc_link {
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 6px !important;
+	color: black !important;
+	font-weight: 600 !important;
+	text-decoration: none !important;
+	padding: 6px 12px !important;
+	border-radius: 6px !important;
+	transition: all 0.2s ease !important;
+
+	// Icon styling
+	.fa-question-circle {
+		color: $primary_color !important;
+		font-size: 1.1em !important;
+	}
+
+	&:hover {
+		text-decoration: none !important;
+		transform: translateY(-1px);
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}
+
 .o_field_many2manytags {
 	background: transparent !important;
 	border: 1px solid #d7d7d7 !important;
