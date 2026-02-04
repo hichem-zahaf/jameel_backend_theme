@@ -1989,6 +1989,14 @@ td .o_field_widget .text-bg-success {
         padding: inherit !important;
     }
 
+// ============================================================================
+// Select Input - Shadcn Inspired
+// ============================================================================
+
+select.o_input {
+	border-radius: 4px !important;
+}
+
 
 .o_field_property_definition .o_field_property_definition_type .o_input_dropdown input {
     background-repeat: no-repeat;
