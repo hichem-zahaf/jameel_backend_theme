@@ -1461,95 +1461,308 @@ s
 	border-radius: 0.3rem;
 }
 
+// ============================================================================
+// Search Panel - Modern Minimal Design
+// ============================================================================
+
 .o_search_panel {
-	box-shadow: 0px 0px 6px 4px rgba(242, 242, 242, 1) !important;
-}
+	flex: 0 0 260px;
+	background: white !important;
+	border-right: 1px solid #e5e7eb !important;
+	box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04) !important;
+	padding: 20px 16px !important;
 
-select.o_field_widget.o_input.o_input_dropdown .o_dropdown_button {
-	top: 10px !important;
-	right: 10px !important;
-}
-
-.o_main_navbar .o_menu_brand {
-	color: #202121 !important;
-	font-size: 1.9rem;
-}
-
-.o_menu_systray {
-
-	.o_MessagingMenu_icon,
-	.fa-clock-o {
-		color: #202121 !important;
-		font-size: 22px !important;
-	}
-}
-
-.o_content {
-	.o_kanban_view.o_kanban_ungrouped {
-		padding: 15px 20px !important;
-		margin: 20px 20px;
-		border-radius: 4px;
-	}
-
-	.o_kanban_renderer .o_kanban_record:not(.o_kanban_ghost) {
-		// Card base styling
-		border-radius: 4px;
-		margin: 15px;
+	// Collapse button
+	.btn-light {
 		background-color: white !important;
-		border: 1px solid #e5e7eb !important;
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.03) !important;
-		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-		transform: translateY(0) !important;
+		border: 1px solid #d1d5db !important;
+		border-radius: 6px !important;
+		color: #6b7280 !important;
+		transition: all 0.15s ease !important;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
 
 		&:hover {
-			transform: translateY(-4px) !important;
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06), 0 10px 20px rgba(0, 0, 0, 0.08), 0 16px 32px rgba(0, 0, 0, 0.06) !important;
-			border-color: rgba(217, 157, 42, 0.2) !important;
+			background-color: #f9fafb !important;
+			border-color: $primary_color !important;
+			color: $primary_color !important;
+			transform: translateY(-1px) !important;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+		}
+	}
+
+	// Section styling
+	.o_search_panel_section {
+		margin-bottom: 24px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	// Section header
+	.o_search_panel_section_header {
+		padding: 12px 8px !important;
+		margin-bottom: 8px !important;
+		letter-spacing: 0.05em !important;
+		font-size: 11px !important;
+		font-weight: 700 !important;
+		text-transform: uppercase !important;
+		color: #9ca3af !important;
+		display: flex !important;
+		align-items: center !important;
+		gap: 8px !important;
+		border-bottom: 1px solid #f3f4f6 !important;
+		transition: color 0.2s ease !important;
+
+		&:hover {
+			color: $secondary_color !important;
 		}
 
-		.btn-link::before{
-			display: none !important;
-		}
-		
-		&:active {
-			transform: translateY(-2px) !important;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 6px 12px rgba(0, 0, 0, 0.06) !important;
-		}
+		// Section icon - gold instead of pink
+		.o_search_panel_section_icon {
+			color: $primary_color !important;
+			font-size: 14px !important;
+			transition: transform 0.2s ease !important;
 
-		.o_kanban_record_title {
-			color: #202121;
-			font-size: 16px;
-			font-weight: 700;
-		}
-
-		.badge-default {
-			color: #f88181 !important;
-		}
-
-		// Footer styling in kanban cards
-		footer {
-			margin-top: auto;
-			padding-top: 12px;
-
-			.text-muted {
-				font-size: 12px;
-				color: #6b7280 !important;
+			.o_search_panel_section_header:hover & {
+				transform: scale(1.1);
 			}
 		}
 
-		// Badge styling in kanban cards
-		.badge {
-			font-size: 11px !important;
-			font-weight: 600 !important;
-			letter-spacing: 0.025em !important;
-			padding: 4px 10px !important;
+		b {
+			color: inherit !important;
+			font-weight: 700 !important;
+		}
+	}
+
+	// List group (items container)
+	.list-group {
+		padding: 4px 0 !important;
+	}
+
+	// Category value items
+	.o_search_panel_category_value {
+		margin: 2px 0 !important;
+
+		header {
 			border-radius: 6px !important;
+			padding: 8px 12px !important;
+			margin: 2px 0 !important;
+			background-color: transparent !important;
+			border: none !important;
+			transition: all 0.15s ease !important;
+			position: relative !important;
+
+			&:hover {
+				background-color: #f9fafb !important;
+
+				.o_search_panel_label_title {
+					color: $primary_color !important;
+				}
+
+				.o_search_panel_counter {
+					background-color: rgba(217, 157, 42, 0.1) !important;
+					color: $primary_color !important;
+				}
+			}
 		}
 
-		// Monetary amount styling
-		.o_field_monetary {
-			font-weight: 700 !important;
-			color: $secondary_color !important;
+		// Active state
+		header.active {
+			background-color: rgba(217, 157, 42, 0.08) !important;
+			border-left: 3px solid $primary_color !important;
+
+			.o_search_panel_label_title {
+				color: $primary_color !important;
+				font-weight: 600 !important;
+			}
+
+			.o_search_panel_counter {
+				background-color: $primary_color !important;
+				color: white !important;
+			}
+		}
+
+		// Nested tree entries (indentation)
+		&.o_treeEntry {
+			margin-left: 16px !important;
+
+			header {
+				padding-left: 8px !important;
+			}
+		}
+	}
+
+	// Label container
+	.o_search_panel_label {
+		gap: 8px !important;
+
+		// Toggle fold button
+		.o_toggle_fold {
+			color: #9ca3af !important;
+			transition: all 0.2s ease !important;
+			width: 20px !important;
+			height: 20px !important;
+			display: flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+			border-radius: 4px !important;
+
+			&:hover {
+				background-color: rgba(217, 157, 42, 0.1) !important;
+				color: $primary_color !important;
+			}
+
+			i {
+				font-size: 12px !important;
+			}
+		}
+	}
+
+	// Label title
+	.o_search_panel_label_title {
+		font-size: 13px !important;
+		font-weight: 500 !important;
+		color: $secondary_color !important;
+		transition: color 0.15s ease !important;
+	}
+
+	// Counter badge
+	.o_search_panel_counter {
+		background-color: #f3f4f6 !important;
+		border-radius: 12px !important;
+		min-width: 24px !important;
+		height: 24px !important;
+		padding: 0 8px !important;
+		display: inline-flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		color: #6b7280 !important;
+		font-size: 11px !important;
+		font-weight: 600 !important;
+		transition: all 0.15s ease !important;
+	}
+}
+
+// ============================================================================
+// Search Panel Sidebar - Docked/Collapsed State
+// ============================================================================
+
+.o_search_panel_sidebar {
+	background: white !important;
+	border-right: 1px solid #e5e7eb !important;
+	border-bottom: 1px solid #e5e7eb !important;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+	padding: 8px !important;
+	transition: all 0.2s ease !important;
+
+	// Container for the toggle button and category tabs
+	.d-flex {
+		align-items: center !important;
+		gap: 4px !important;
+	}
+
+	// Toggle/expand button
+	.btn-light {
+		background-color: white !important;
+		border: 1px solid #d1d5db !important;
+		border-radius: 6px !important;
+		color: #6b7280 !important;
+		transition: all 0.15s ease !important;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+		flex-shrink: 0 !important;
+
+		&:hover {
+			background-color: $primary_color !important;
+			border-color: $primary_color !important;
+			color: white !important;
+			transform: translateY(-1px) !important;
+			box-shadow: 0 2px 4px rgba(217, 157, 42, 0.25) !important;
+		}
+
+		&:active {
+			transform: translateY(0) !important;
+		}
+
+		i {
+			font-size: 14px !important;
+		}
+	}
+
+	// Current selection container
+	.o_search_panel_current_selection {
+		display: flex !important;
+		align-items: center !important;
+		gap: 6px !important;
+		flex: 1 !important;
+		overflow-x: auto !important;
+		overflow-y: hidden !important;
+		padding: 4px 0 !important;
+
+		// Hide scrollbar
+		-ms-overflow-style: none !important;
+		scrollbar-width: none !important;
+
+		&::-webkit-scrollbar {
+			display: none !important;
+		}
+	}
+
+	// Category tabs/buttons
+	.o_search_panel_category {
+		display: inline-flex !important;
+		align-items: center !important;
+		gap: 6px !important;
+		padding: 6px 12px !important;
+		background-color: white !important;
+		border: 1px solid #d1d5db !important;
+		border-radius: 6px !important;
+		font-size: 12px !important;
+		font-weight: 500 !important;
+		color: $secondary_color !important;
+		transition: all 0.15s ease !important;
+		white-space: nowrap !important;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+		cursor: pointer !important;
+
+		// Icon styling
+		.o_search_panel_section_icon {
+			color: $primary_color !important;
+			font-size: 13px !important;
+			transition: transform 0.2s ease !important;
+		}
+
+		&:hover {
+			background-color: #f9fafb !important;
+			border-color: $primary_color !important;
+			color: $primary_color !important;
+			transform: translateY(-1px) !important;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+
+			.o_search_panel_section_icon {
+				transform: scale(1.1) !important;
+			}
+		}
+
+		&:active {
+			transform: translateY(0) !important;
+		}
+
+		// Active/selected state
+		&.active {
+			background-color: $primary_color !important;
+			border-color: $primary_color !important;
+			color: white !important;
+			box-shadow: 0 1px 3px rgba(217, 157, 42, 0.2) !important;
+
+			.o_search_panel_section_icon {
+				color: white !important;
+			}
+
+			&:hover {
+				background-color: lighten($primary_color, 3%) !important;
+				border-color: lighten($primary_color, 3%) !important;
+			}
 		}
 	}
 }
@@ -1616,61 +1829,9 @@ select.o_field_widget.o_input.o_input_dropdown .o_dropdown_button {
 	border-radius: 50%;
 }
 
-.o_search_panel {
-	flex: 0 0 240px;
-
-	.o_search_panel_category_value header {
-		align-items: center;
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: flex;
-		justify-content: space-between;
-		padding: 6px 6px 8px 0px;
-	}
-
-	.list-group-item header.active {
-		background-color: $sub_color2  !important;
-
-		.o_search_panel_label_title {
-			font-weight: 800 !important;
-			color: white !important;
-
-			&:hover {
-				color: white !important;
-			}
-		}
-	}
-
-	.o_search_panel_section {
-		.o_search_panel_section_header {
-			padding: 15px 0;
-			letter-spacing: 1px;
-			font-size: 16px;
-		}
-	}
-
-	.list-group-item {
-		.o_search_panel_label_title {
-			width: 100%;
-			display: inline-block;
-			max-width: 100%;
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			vertical-align: top;
-			font-size: 14px;
-			font-weight: 500;
-			letter-spacing: 0.5px;
-			text-transform: uppercase;
-			color: #232323;
-			transition: color 0.3s ease;
-
-			&:hover {
-				color: $sub_color2;
-			}
-		}
-	}
-}
+// ============================================================================
+// Scrollbar - Custom Design
+// ============================================================================
 
 /* width */
 ::-webkit-scrollbar {
@@ -1692,18 +1853,6 @@ select.o_field_widget.o_input.o_input_dropdown .o_dropdown_button {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
-}
-
-.o_search_panel_counter {
-	background-color: #f4f7f6 !important;
-	border-radius: 50%;
-	width: 25px;
-	text-align: center;
-	color: black !important;
-}
-
-.o_search_panel .o_search_panel_category .o_search_panel_section_icon {
-	color: #ed7f80;
 }
 
 // ============================================================================
@@ -2335,10 +2484,6 @@ strong {
 
 .o_kanban_renderer .o_kanban_record .o_kanban_card_header_title {
 	font-weight: bold;
-}
-
-.o_search_panel .o_search_panel_category .o_search_panel_section_icon {
-	color: #ed7f80 !important;
 }
 
 .o_dropdown_title {
