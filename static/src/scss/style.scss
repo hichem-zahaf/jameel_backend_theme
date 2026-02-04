@@ -1267,9 +1267,12 @@ select.o_field_widget.o_input.o_input_dropdown .o_dropdown_button {
 // ============================================================================
 
 .o_form_renderer .o_setting_container .position-sticky {
-	// Remove default border
+	// White background for sidebar
+	background-color: white !important;
+
+	// Right border for separation
 	.border-end {
-		border-right: none !important;
+		border-right: 1px solid #e5e7eb !important; // neutral-200
 	}
 }
 
