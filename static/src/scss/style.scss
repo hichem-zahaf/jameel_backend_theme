@@ -1792,7 +1792,9 @@ select.o_field_widget.o_input.o_input_dropdown .o_dropdown_button {
 }
 
 
-
+.o-autocomplete .o_input{
+	border: none !important;
+}
 
 .o_required_modifier.o_input,
 .o_required_modifier .o_input {
@@ -2653,7 +2655,7 @@ td .o_field_widget .text-bg-success {
 // Input Fields - Shadcn Inspired
 // ============================================================================
 
-.o_input {
+ .o_input:not(.o-autocomplete--input){
     padding: 2px 12px !important;
     border-radius: 4px !important;
     border: 1px solid #d1d5db !important; // gray-300
