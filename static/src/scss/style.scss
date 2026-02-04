@@ -991,6 +991,360 @@ td {
 	background-color: transparent !important;
 }
 
+// ============================================================================
+// Discuss Sidebar - Modern Minimal Design
+// ============================================================================
+
+// Main sidebar container
+.o-mail-DiscussSidebar,
+.o-mail-discussSidebarBgColor {
+	background-color: white !important;
+	border-right: 1px solid #e5e7eb !important;
+	box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04) !important;
+	padding: 0 !important;
+}
+
+// Top section with options and "Start a meeting" button
+.o-mail-DiscussSidebar-top,
+.o-mail-discussSidebarBgColor.o-mail-DiscussSidebar-top {
+	background-color: white !important;
+	border-bottom: 1px solid #f3f4f6 !important;
+	padding: 12px 16px !important;
+	gap: 8px !important;
+
+	// Options button (ellipsis)
+	.o-mail-DiscussSidebar-optionsBtn {
+		background-color: transparent !important;
+		border: 1px solid #d1d5db !important;
+		color: #9ca3af !important;
+		width: 32px !important;
+		height: 32px !important;
+		border-radius: 8px !important;
+		transition: all 0.15s ease !important;
+
+		&:hover {
+			background-color: #f9fafb !important;
+			border-color: $primary_color !important;
+			color: $primary_color !important;
+			opacity: 1 !important;
+		}
+
+		i {
+			font-size: 14px !important;
+		}
+	}
+
+	// "Start a meeting" button
+	.btn-primary {
+		background-color: $primary_color !important;
+		border-color: $primary_color !important;
+		color: white !important;
+		border-radius: 8px !important;
+		padding: 8px 16px !important;
+		font-size: 13px !important;
+		font-weight: 500 !important;
+		box-shadow: 0 1px 3px rgba(217, 157, 42, 0.2) !important;
+
+		&:hover {
+			background-color: lighten($primary_color, 3%) !important;
+			border-color: lighten($primary_color, 3%) !important;
+			box-shadow: 0 2px 6px rgba(217, 157, 42, 0.25) !important;
+		}
+	}
+}
+
+// Mailbox items (Inbox, Starred, History)
+.o-mail-DiscussSidebar-item.o-mail-Mailbox {
+	background-color: transparent !important;
+	border: none !important;
+	border-radius: 8px !important;
+	padding: 10px 12px !important;
+	margin: 2px 8px !important;
+	gap: 10px !important;
+	transition: all 0.15s ease !important;
+
+	.o-mail-ThreadIcon {
+		width: 32px !important;
+		height: 32px !important;
+		background-color: #f9fafb !important;
+		border-radius: 8px !important;
+		color: #6b7280 !important;
+		transition: all 0.15s ease !important;
+
+		div {
+			font-size: 14px !important;
+		}
+	}
+
+	// Label text
+	.me-2.small {
+		color: #374151 !important;
+		font-size: 13px !important;
+		font-weight: 500 !important;
+	}
+
+	&:hover {
+		background-color: #f9fafb !important;
+
+		.o-mail-ThreadIcon {
+			background-color: rgba(217, 157, 42, 0.1) !important;
+			color: $primary_color !important;
+		}
+
+		.me-2.small {
+			color: $primary_color !important;
+		}
+	}
+
+	// Active state
+	&.o-active {
+		background-color: rgba(217, 157, 42, 0.08) !important;
+
+		.o-mail-ThreadIcon {
+			background-color: $primary_color !important;
+			color: white !important;
+		}
+
+		.me-2.small {
+			color: $primary_color !important;
+			font-weight: 600 !important;
+		}
+	}
+}
+
+// Category headers (Channels, Direct messages)
+.o-mail-DiscussSidebarCategory {
+	background-color: transparent !important;
+	padding: 12px 12px 4px !important;
+	margin: 4px 8px !important;
+	border-radius: 6px !important;
+
+	// Category toggler button
+	.o-mail-DiscussSidebarCategory-toggler {
+		background-color: transparent !important;
+		border: none !important;
+		padding: 4px 0 !important;
+		gap: 6px !important;
+
+		// Chevron icon
+		.o-mail-DiscussSidebarCategory-icon {
+			color: #9ca3af !important;
+			font-size: 12px !important;
+			transition: transform 0.2s ease !important;
+		}
+
+		// Category title
+		span:not(.o-mail-DiscussSidebarCategory-icon) {
+			color: #9ca3af !important;
+			font-size: 11px !important;
+			font-weight: 700 !important;
+			letter-spacing: 0.05em !important;
+		}
+
+		&:hover {
+			.o-mail-DiscussSidebarCategory-icon {
+				color: $secondary_color !important;
+			}
+
+			span:not(.o-mail-DiscussSidebarCategory-icon) {
+				color: $secondary_color !important;
+			}
+		}
+	}
+
+	// Category action buttons (add, settings)
+	.o-mail-DiscussSidebarCategory-actions {
+		gap: 4px !important;
+
+		.btn {
+			background-color: transparent !important;
+			border: 1px solid #d1d5db !important;
+			color: #9ca3af !important;
+			width: 28px !important;
+			height: 28px !important;
+			border-radius: 6px !important;
+			padding: 0 !important;
+			transition: all 0.15s ease !important;
+
+			&:hover {
+				background-color: rgba(217, 157, 42, 0.08) !important;
+				border-color: $primary_color !important;
+				color: $primary_color !important;
+				opacity: 1 !important;
+			}
+
+			i {
+				font-size: 12px !important;
+			}
+		}
+	}
+}
+
+// Channel items
+.o-mail-DiscussSidebarChannel {
+	background-color: transparent !important;
+	border: none !important;
+	border-radius: 8px !important;
+	padding: 8px 12px !important;
+	margin: 2px 8px !important;
+	gap: 8px !important;
+	transition: all 0.15s ease !important;
+
+	// Channel main content
+	.o-mail-DiscussSidebarChannel-itemMain {
+		gap: 8px !important;
+
+		// Avatar container
+		div[style*="width:26px"] {
+			border-radius: 8px !important;
+			overflow: hidden !important;
+			background-color: #f9fafb !important;
+		}
+
+		// Channel name
+		.o-mail-DiscussSidebarChannel-itemName {
+			color: #6b7280 !important;
+			font-size: 13px !important;
+			font-weight: 500 !important;
+		}
+
+		// Unread item name
+		.o-item-unread {
+			color: $secondary_color !important;
+			font-weight: 600 !important;
+		}
+	}
+
+	// Command buttons (settings, leave)
+	.o-mail-DiscussSidebarChannel-commands {
+		.btn-group {
+			gap: 4px !important;
+
+			.btn {
+				background-color: transparent !important;
+				border: none !important;
+				color: #d1d5db !important;
+				width: 24px !important;
+				height: 24px !important;
+				border-radius: 4px !important;
+				padding: 0 !important;
+				transition: all 0.15s ease !important;
+
+				&:hover {
+					background-color: rgba(217, 157, 42, 0.1) !important;
+					color: $primary_color !important;
+					opacity: 1 !important;
+				}
+
+				i {
+					font-size: 12px !important;
+				}
+			}
+		}
+	}
+
+	// Unread indicator
+	.o-mail-DiscussSidebar-unreadIndicator {
+		right: 8px !important;
+		top: 50% !important;
+		transform: translateY(-50%) !important;
+
+		i {
+			color: $primary_color !important;
+			font-size: 8px !important;
+		}
+	}
+
+	// Bot indicator
+	.o-mail-DiscussSidebarChannel-threadIcon {
+		width: 16px !important;
+		height: 16px !important;
+		background-color: white !important;
+		border: 1px solid #e5e7eb !important;
+
+		.fa-heart {
+			font-size: 10px !important;
+		}
+	}
+
+	&:hover {
+		background-color: #f9fafb !important;
+
+		.o-mail-DiscussSidebarChannel-itemName {
+			color: $secondary_color !important;
+		}
+	}
+
+	// Active state
+	&.o-active {
+		background-color: rgba(217, 157, 42, 0.08) !important;
+
+		.o-mail-DiscussSidebarChannel-itemName {
+			color: $primary_color !important;
+			font-weight: 600 !important;
+		}
+
+		&:hover .o-mail-DiscussSidebarChannel-itemName {
+			color: $primary_color !important;
+		}
+	}
+
+	// Unread state
+	&.o-unread {
+		background-color: transparent !important;
+	}
+}
+
+// ============================================================================
+// Remove Old Discuss Sidebar Styles
+// ============================================================================
+
+.o_DiscussSidebarMailbox {
+	color: #374151 !important;
+	padding: 0 !important;
+
+	.o_DiscussSidebarMailbox_item {
+		margin-left: 0 !important;
+	}
+
+	.o_ThreadIcon {
+		font-size: 14px !important;
+	}
+}
+
+.o_DiscussSidebarMailbox:hover {
+	color: $primary_color !important;
+}
+
+.o_DiscussSidebarMailbox.o-active {
+	background: transparent !important;
+	color: $primary_color !important;
+	font-weight: 600 !important;
+}
+
+.o_DiscussSidebarCategory_title {
+	font-size: 11px !important;
+	font-weight: 700 !important;
+	color: #9ca3af !important;
+	letter-spacing: 0.05em !important;
+}
+
+.o_DiscussSidebarCategory_header {
+	margin: 12px 12px 4px !important;
+}
+
+.o_DiscussSidebarCategory_command {
+	color: #9ca3af !important;
+}
+
+.o_DiscussSidebarCategory_item {
+	color: #6b7280 !important;
+}
+
+.o_DiscussSidebarCategoryItem_command:not(:hover) {
+	color: #d1d5db !important;
+}
+
 .o_Message_prettyBody {
 	p {
 		a {
