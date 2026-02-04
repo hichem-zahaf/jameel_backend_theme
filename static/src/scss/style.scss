@@ -1657,7 +1657,7 @@ select.o_field_widget.o_input.o_input_dropdown .o_dropdown_button {
 
 	// Add link icon
 	&::after {
-		content: '↗';
+		content: '';
 		font-size: 0.85em;
 		color: black;
 		opacity: 0.7;
