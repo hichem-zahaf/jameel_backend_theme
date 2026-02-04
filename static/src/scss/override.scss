@@ -1,3 +1,146 @@
+// ============================================================================
+// Checkbox/Switch Toggle - Shadcn Inspired
+// ============================================================================
+
+// Base checkbox input - transform to switch style
+.o-checkbox{
+    padding-left : 0 !important;
+}
+.form-check-input {
+    width: 2.5em !important;
+    height: 1.5em !important;
+    border-radius: 1.5em !important;
+    background-color: #e5e7eb !important;
+    border: 2px solid #d1d5db !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    // Remove default checkbox appearance
+    &:checked {
+        background-color: $primary_color !important;
+        border-color: $primary_color !important;
+        background-image: none !important;
+
+        // Create the toggle knob (using ::before pseudo-element)
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: calc(100% - 1.35em);
+            width: 1.1em;
+            height: 1.1em;
+            background-color: white;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    // Unchecked state - show knob on left
+    &:not(:checked)::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0.2em;
+        width: 1.1em;
+        height: 1.1em;
+        background-color: white;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    // Hover state
+    &:hover {
+        border-color: #9ca3af !important;
+
+        &:not(:checked) {
+            background-color: #d1d5db !important;
+        }
+
+        &:checked {
+            background-color: lighten($primary_color, 5%) !important;
+            border-color: lighten($primary_color, 5%) !important;
+        }
+    }
+
+    // Focus state
+    &:focus {
+        border-color: $primary_color !important;
+        box-shadow: 0 0 0 3px rgba(217, 157, 42, 0.25) !important;
+        outline: none !important;
+    }
+
+    // Active/clicking state
+    &:active {
+        &:not(:checked)::before,
+        &::before {
+            width: 1.2em;
+        }
+    }
+
+    // Disabled state
+    &:disabled {
+        opacity: 0.5 !important;
+        cursor: not-allowed !important;
+        background-color: #e5e7eb !important;
+        border-color: #d1d5db !important;
+
+        &::before {
+            background-color: #f3f4f6 !important;
+        }
+
+        &:checked {
+            background-color: #9ca3af !important;
+            border-color: #9ca3af !important;
+        }
+    }
+
+    // Indeterminate state
+    &:indeterminate {
+        background-color: $secondary_color !important;
+        border-color: $secondary_color !important;
+        background-image: none !important;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0.6em;
+            height: 0.6em;
+            background-color: white;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+// Ensure the label is properly aligned with the switch
+.form-check-label {
+    padding-left: 0.5em !important;
+    cursor: pointer;
+}
+
+// Inline checkboxes (like in the example)
+.form-check.d-inline-block {
+    .form-check-input {
+        vertical-align: middle;
+    }
+
+    .form-check-label {
+        vertical-align: middle;
+        margin-left: 0.5em;
+    }
+}
+
 // ========================================
 // TOP NAVBAR - Video and Audio Call buttons
 // ========================================
