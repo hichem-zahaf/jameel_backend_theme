@@ -76,107 +76,90 @@
     <!--  -->
 
     <!-- banner-section -->
-    <div class="my-5">
-      <div class="">
-        <img src="banner.jpg" class="img-fluid" style="border-radius: 16px; width:1300px;">
+    <section class="my-5 position-relative overflow-hidden"
+      style="background: linear-gradient(135deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%); border-radius: 24px; padding: 60px 40px;">
+      <!-- Decorative patterns -->
+      <div class="position-absolute top-0 end-0 w-75 h-100 opacity-10">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+          <defs>
+            <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="white" stroke-width="0.5"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)"/>
+        </svg>
       </div>
-    </div>
 
-    <!--  -->
+      <div class="row align-items-center position-relative" style="z-index: 1;">
+        <div class="col-lg-7">
+          <!-- Badge -->
+          <div class="d-inline-block mb-4 px-4 py-2 rounded-pill"
+            style="background: rgba(52, 53, 52, 0.2); border: 1px solid rgba(52, 53, 52, 0.3);">
+            <span class="fw-semibold" style="color: #343534; font-size: 13px; letter-spacing: 1.5px;">
+              <i class="fas fa-star me-2"></i>ODOO 19 COMMUNITY EDITION
+            </span>
+          </div>
 
+          <!-- Main Heading -->
+          <h1 class="mb-4" style="font-size: 56px; font-weight: 800; line-height: 1.1; color: #343534;">
+            Jameel Backend
+            <span class="d-block" style="color: #343534;">Theme</span>
+          </h1>
 
-    <!-- widgets-features -->
+          <!-- Description -->
+          <p class="mb-5" style="font-size: 18px; line-height: 1.7; color: rgba(52, 53, 52, 0.85); max-width: 500px;">
+            Transform your Odoo backend with a minimalist and elegant design. Experience a new level of visual sophistication
+            with refined layouts, beautiful typography, and a perfect gold & grey color palette.
+          </p>
 
-    <!--    <div class="" style="border-radius: 12px;-->
-    <!--        background-color: #121212; padding: 80px 40px;">-->
-    <!--      <div class="position-relative" style="color: #FFF;-->
-    <!--        text-align: center;-->
-    <!--        font-size: 46.875px;-->
-    <!--        font-style: normal;-->
-    <!--        font-weight: 600; padding-bottom: 40px; ">-->
-    <!--        <h2 style="color: #fff;">Enjoy 50+ Premium-->
-    <!--          widgets</h2>-->
-
-    <!--        <p style="color: #999;-->
-    <!--            text-align: center;-->
-    <!--            font-size: 15.625px;-->
-    <!--            font-style: normal;-->
-    <!--            font-weight: 400;-->
-    <!--            line-height: 25.6px;">info includes 300+ elements that you may need to create website without-->
-    <!--          external plugins.</p>-->
-    <!--      </div>-->
-
-
-    <!--      <div class="d-flex justify-content-center gap-3 flex-wrap">-->
-    <!--        <div class="d-flex align-items-center gap-2"-->
-    <!--          style="border-radius: 12px; background-color: #1F1F1F; padding: 16px 22px; color: #fff;">-->
-    <!--          <img src="./img/gear.svg" class="img-responsive" height="22px" width="22px">-->
-    <!--          <span>Iconbox</span>-->
-    <!--        </div>-->
-    <!--        <div class="d-flex align-items-center gap-2"-->
-    <!--          style="border-radius: 12px; background-color: #1F1F1F; padding: 16px 22px; color: #fff;">-->
-    <!--          <img src="./img/gear.svg" class="img-responsive" height="22px" width="22px">-->
-    <!--          <span>Portfolio</span>-->
-    <!--        </div>-->
-    <!--        <div class="d-flex align-items-center gap-2"-->
-    <!--          style="border-radius: 12px; background-color: #1F1F1F; padding: 16px 22px; color: #fff;">-->
-    <!--          <img src="./img/gear.svg" class="img-responsive" height="22px" width="22px">-->
-    <!--          <span>Testimonials</span>-->
-    <!--        </div>-->
-    <!--        <div class="d-flex align-items-center gap-2"-->
-    <!--          style="border-radius: 12px; background-color: #1F1F1F; padding: 16px 22px; color: #fff;">-->
-    <!--          <img src="./img/gear.svg" class="img-responsive" height="22px" width="22px">-->
-    <!--          <span>Testimonials</span>-->
-    <!--        </div>-->
-    <!--        <div class="d-flex align-items-center gap-2"-->
-    <!--          style="border-radius: 12px; background-color: #1F1F1F; padding: 16px 22px; color: #fff;">-->
-    <!--          <img src="./img/gear.svg" class="img-responsive" height="22px" width="22px">-->
-    <!--          <span>Testimonials</span>-->
-    <!--        </div>-->
-    <!--        <div class="d-flex align-items-center gap-2"-->
-    <!--          style="border-radius: 12px; background-color: #1F1F1F; padding: 16px 22px; color: #fff;">-->
-    <!--          <img src="./img/gear.svg" class="img-responsive" height="22px" width="22px">-->
-    <!--          <span>Testimonials</span>-->
-    <!--        </div>-->
-    <!--        <div class="d-flex align-items-center gap-2"-->
-    <!--          style="border-radius: 12px; background-color: #1F1F1F; padding: 16px 22px; color: #fff;">-->
-    <!--          <img src="./img/gear.svg" class="img-responsive" height="22px" width="22px">-->
-    <!--          <span>Testimonials</span>-->
-    <!--        </div>-->
-    <!--        <div class="d-flex align-items-center gap-2"-->
-    <!--          style="border-radius: 12px; background-color: #1F1F1F; padding: 16px 22px; color: #fff;">-->
-    <!--          <img src="./img/gear.svg" class="img-responsive" height="22px" width="22px">-->
-    <!--          <span>Testimonials</span>-->
-    <!--        </div>-->
-    <!--        <div class="d-flex align-items-center gap-2"-->
-    <!--          style="border-radius: 12px; background-color: #1F1F1F; padding: 16px 22px; color: #fff;">-->
-    <!--          <img src="./img/gear.svg" class="img-responsive" height="22px" width="22px">-->
-    <!--          <span>Testimonials</span>-->
-    <!--        </div>-->
-    <!--        <div class="d-flex align-items-center gap-2"-->
-    <!--          style="border-radius: 12px; background-color: #1F1F1F; padding: 16px 22px; color: #fff;">-->
-    <!--          <img src="./img/gear.svg" class="img-responsive" height="22px" width="22px">-->
-    <!--          <span>Testimonials</span>-->
-    <!--        </div>-->
-    <!--        <div class="d-flex align-items-center gap-2"-->
-    <!--          style="border-radius: 12px; background-color: #1F1F1F; padding: 16px 22px; color: #fff;">-->
-    <!--          <img src="./img/gear.svg" class="img-responsive" height="22px" width="22px">-->
-    <!--          <span>Testimonials</span>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </div>-->
-
-
-    <div style="text-align: center;">
-      <div class="col-lg-12 text-center mt-5">
-        <a href="https://apps.odoo.com/apps/themes/18.0/code_backend_theme_enterprise/"
-          style="background-color:#556EE6 !important;border: 1px solid #556EE6; color:#fff ; font-weight: 600; padding: 16px 24px; margin: 0 5px; border-radius: 5px; text-decoration: none; display: inline-block; transition: background-color 0.3s ease-in-out;">
-          <i class="fa fa-download mr-1"></i> Download Code
-          Backend Theme for Enterprise
-        </a>
-        <br>
+          <!-- CTA Buttons -->
+          <div class="d-flex flex-wrap gap-3">
+            <a href="https://apps.odoo.com/apps/themes/18.0/code_backend_theme_enterprise/"
+              class="btn btn-lg px-5 py-3 rounded-3 text-decoration-none fw-semibold transition-all"
+              style="background: #343534; color: #d99d2a; border: none; box-shadow: 0 8px 24px rgba(52, 53, 52, 0.3);">
+              <i class="fa fa-download me-2"></i> Download Enterprise Version
+            </a>
+            <a href="#Features" class="btn btn-lg px-5 py-3 rounded-3 text-decoration-none fw-semibold transition-all"
+              style="background: rgba(52, 53, 52, 0.15); color: #343534; border: 2px solid #343534;">
+              <i class="fas fa-play me-2"></i> View Features
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-4 mt-lg-0">
+          <!-- Hero Image -->
+          <div class="position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle rounded-4"
+              style="width: 85%; height: 85%; background: rgba(52, 53, 52, 0.1); filter: blur(40px); z-index: 0;">
+            </div>
+            <img src="banner.jpg" class="img-fluid position-relative rounded-4"
+              style="border: 4px solid rgba(52, 53, 52, 0.2); z-index: 1; box-shadow: 0 20px 60px rgba(52, 53, 52, 0.3);"
+              alt="Jameel Backend Theme">
+          </div>
+        </div>
       </div>
-    </div>
+
+      <!-- Floating Stats -->
+      <div class="row mt-5 position-relative" style="z-index: 1;">
+        <div class="col-md-4">
+          <div class="text-center p-4 rounded-3" style="background: rgba(52, 53, 52, 0.1);">
+            <div style="font-size: 36px; font-weight: 700; color: #343534;">5+</div>
+            <div style="font-size: 14px; color: rgba(52, 53, 52, 0.7);">View Types</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center p-4 rounded-3" style="background: rgba(52, 53, 52, 0.1);">
+            <div style="font-size: 36px; font-weight: 700; color: #343534;">100%</div>
+            <div style="font-size: 14px; color: rgba(52, 53, 52, 0.7);">Responsive</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center p-4 rounded-3" style="background: rgba(52, 53, 52, 0.1);">
+            <div style="font-size: 36px; font-weight: 700; color: #343534;">19</div>
+            <div style="font-size: 14px; color: rgba(52, 53, 52, 0.7);">Odoo Version</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--feature section  -->
 
@@ -330,660 +313,285 @@
         </div>
       </div>
     </div>
-
-    <!--  -->
-    <section class="container my-5">
-      <div class="row">
-        <div class="col-md-12">
-          <ul role="tablist" class="nav nav-tabs justify-content-center d-flex justify-content-center" data-tabs="tabs"
-            style="border:none; background-color:unset; margin:0 auto">
-
-
-
-            <li class="nav-item"
-              style="border-top-right-radius:10px; border-top-left-radius:10px; margin-right:10px; border:1px solid #D6E0FF; border-bottom:0">
-              <a href="#Features" data-bs-toggle="tab" aria-expanded="true" class="show"
-                style="text-transform:uppercase;display: block; font-weight:600; font-size:15px; letter-spacing:1px; padding:11px 20px; border-top-left-radius:10px;text-decoration: none; border-top-right-radius:10px; color:#2b2b2b; border:1px solid transparent">
-                Features</a>
-            </li>
-            <li class="nav-item"
-              style="border-top-right-radius:10px; border-top-left-radius:10px;  margin-right:10px; border:1px solid #D6E0FF; border-bottom:0">
-              <a href="#Screenshot" data-bs-toggle="tab" aria-expanded="true" class="show"
-                style="text-transform:uppercase;display: block; font-weight:600; font-size:15px; letter-spacing:1px; padding:11px 20px; border-top-left-radius:10px;text-decoration: none; border-top-right-radius:10px; color:#2b2b2b; border:1px solid transparent">
-                Screenshot
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-12  tab-content ui-front"
-          style="border-radius:20px;border: 1px solid #D6E0FF; height:auto;padding: 20px;">
-          <div class="tab-pane  fade" id="Screenshot" role="tabpanel" aria-labelledby="screenshot-1">
-            <div class="row" style="padding:4rem 2.5rem 0 !important; background-color:#fff !important">
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Sidebar </span>
-
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Sidebar with New Menu Icons</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/sidebar.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 32px;
-              color: #212121;
-              margin-bottom: 13px;
-              text-transform: uppercase;">Apps</span>
-
-                <p style="font-size: 16px;
-              font-weight: 400;
-              line-height: 1.5; color: #212529;">Available apps view as cards in new look</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/apps.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Employees </span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Kanban view of employees</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/employees.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Error in purchase </span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Error is showing in style in purchase page</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/error_purchase.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">New product </span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">create new product in style</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/product.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Kanban view of sale oredrs </span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Kanban view of sale orders in new color pattern</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/sale_kanban.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Login</span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Login page in classy look</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/login.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Group by</span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Group By View</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/groupby.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Settings page</span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Settings page in new color pattern</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/settngs.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Product kanban</span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">product page in kanban view</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/settngs.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Discuss page</span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Discuss page in new style</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/discuss.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Purchase List</span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Purchase list view in new style</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/discuss.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Wizard Popup</span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Wizards in new style</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/invoice_wizard.png" class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">User Error</span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">User error in color pattern</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/user_error.png " class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Date picking</span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Stylish Date picking option</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/timeoff.png " class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Recruitment Kanban</span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Recruitment Kanban View With Ribbons</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/recruitment.png " class="img-fluid" alt="">
-                </div>
-              </section>
-              <section class="mb-5"
-                style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;padding-bottom: 0px;">
-                <span class="label" style="font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                color: #212121;
-                margin-bottom: 13px;
-                text-transform: uppercase;">Graph</span>
-                <p style="font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5; color: #212529;">Graphs with Sidebar</p>
-                <div class="mt-3" style="border-radius: 6px 6px 0px 0px;overflow: hidden;">
-                  <img src="images/graph.png " class="img-fluid" alt="">
-                </div>
-              </section>
-            </div>
-          </div>
-
-
-          <div class="tab-pane active show fade" id="Features" role="tabpanel" aria-labelledby="features-1">
-            <section class="">
-              <section class="mt-5">
-                <div class="row" style="margin-bottom: 24px; padding: 10px;">
-                  <div class="col-md-8">
-                    <div style="border-radius: 10px; padding: 32px;
-                      background-color: #303030;
-                      -webkit-backdrop-filter: blur(5px);
-                      backdrop-filter: blur(5px); height: 100%;">
-                      <div class="info">
-                        <span class="label" style="font-size: 12px;
-                          font-style: normal;
-                          font-weight: 700;
-                          line-height: 32px;
-                          color: #f14848;
-                          margin-bottom: 13px;
-                          text-transform: uppercase;">HIGHLIGHT</span>
-                        <h3 class="text-white" style="    color: #fff;
-                          font-size: 24px;
-                          font-weight: 500;
-                          line-height: 32px;
-                          margin-bottom: 9px;">All-New Menu Design</h3>
-                        <p class="des" style="color: #c7c7c7;
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 400;
-                          line-height: 24px;
-                          margin-bottom: 0;">Now take advantage of everything
-                          your dashboard has to offer even on the go. Our
-                          design are now fully responsive, enabling you to
-                          view and manage everything from the comfort of
-                          your mobile device. Everything has been designed
-                          in a meticulous fashion so that every view snaps
-                          itself to fit the size of the device you are
-                          using, be it smartphones, tablet or any other
-                          portables, our theme adjusts itself to fit the
-                          screen size.</p>
-
-
-                      </div>
-                      <div class="mt-5">
-                        <img src="./img/theme_menu.png" alt="Grid item" class="img-fluid" style="height:500px;">
-                      </div>
-                      <a href="#" target="_blank" class="url_link" name="grid_popup"
-                        aria-label="Url link label"><span></span></a>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-md-4">
-                    <div style="border-radius: 10px; padding: 32px;
-                      background-color: #303030;
-                      -webkit-backdrop-filter: blur(5px);
-                      backdrop-filter: blur(5px); height: 100%;">
-                      <div class="info">
-                        <span class="label" style="font-size: 12px;
-                          font-style: normal;
-                          font-weight: 700;
-                          line-height: 32px;
-                          color: #f14848;
-                          margin-bottom: 13px;
-                          text-transform: uppercase;">HIGHLIGHT</span>
-                        <h3 class="text-white" style="    color: #fff;
-                          font-size: 24px;
-                          font-weight: 500;
-                          line-height: 32px;
-                          margin-bottom: 9px;">Easily Access Sidebar Menu</h3>
-                        <p class="des" style="color: #c7c7c7;
-                          font-size: 16px;
-                          font-style: normal;
-                          font-weight: 400;
-                          line-height: 24px;
-                          margin-bottom: 0;">Reveal the sidebar menu with just a
-                          click. Sidebar menu features all the relevant links to
-                          navigate through the application. Hiding the sidebar
-                          leaves more space on the main area offering a
-                          distraction-free view that lets you focus on what
-                          matters the most.</p>
-
-                      </div>
-                      <div class="mt-5">
-                        <img src="./img/sidebar_theme.png" alt="Grid item" class="img-fluid">
-                      </div>
-                      <a href="#" target="_blank" class="url_link" name="grid_popup"
-                        aria-label="Url link label"><span></span></a>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-
-                <!--row-3 -->
-                <!--  -->
-              </section>
-            </section>
-          </div>
-        </div>
-
-      </div>
-
-
-    </section>
-
-    <!--sections  -->
-
-
-
-    <!-- section content -->
-
-    <section class="mb-5"
-      style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;">
-      <div class="row d-flex align-items-center">
-        <div class="col col-12 col-md-12 col-lg-6">
-          <div style="padding: 20px;">
-            <h4 class="" style="font-size: 46px;">
-              <span class="gradient" style="background: linear-gradient(248.96deg, #FF9C8D 45.28%, #D655A5 65.79%, #6053CB 85.87%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: 700;
-                display: inline-block;
-                width: 100%;"><span class="under-line">Fully Responsive Layout</span></span><br>
-            </h4>
-
-            <div class="mt-4">
-              <p style="color: #444; font-size: 16px;
-              font-weight: 400;
-              line-height: 1.5;">This theme adapts gracefully from full-scale desktop
-                dashboards to compact mobile interfaces, preserving clarity, balance,
-                and usability at every breakpoint. Whether you’re managing operations
-                from a workstation or checking updates on the go, the layout reshapes
-                itself naturally—no clutter, no compromise.
-                Every element is thoughtfully scaled and repositioned to ensure smooth
-                navigation, consistent visuals, and uninterrupted workflows across desktops,
-                tablets, and smartphones. One backend. One experience. Any device.
-              </p>
-              <ul class="d-flex flex-column gap-3 ms-0 ps-0 mt-4">
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="./img/check.svg"
-                    style="width: 24px;"><span style="  color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Fully responsive</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="./img/check.svg"
-                    style="width: 24px;"><span style="  color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Fly-out hamburger menu on the left</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="./img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Fits perfectly to all screen sizes</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="./img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Quick access menu at the bottom in discuss</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col col-12 col-md-12 col-lg-6">
-          <div>
-            <div>
-              <img class="img-fluid" src="./img/responsive_layout.jpg" style="
-                border-radius: 20px;
-            ">
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-5"
-      style="background: linear-gradient(to top, rgb(253 254 255), #E5EEFF); border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;">
-      <div class="row d-flex align-items-center">
-        <div class="col col-12 col-md-12 col-lg-6">
-          <div>
-            <div>
-              <img class="img-fluid" src="img/list_view_theme.png" style="
-                border-radius: 20px;
-            ">
-            </div>
-
-          </div>
-        </div>
-        <div class="col col-12 col-md-12 col-lg-6">
-          <div style="padding: 20px;">
-            <h4 class="" style="font-size: 46px;">
-              <span class="gradient" style="background: linear-gradient(248.96deg, #FF9C8D 45.28%, #D655A5 65.79%, #6053CB 85.87%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: 700;
-                display: inline-block;
-                width: 100%;"><span class="under-line">List View</span></span><br>
-              <!--              <span class="gradient" style="background: linear-gradient(248.96deg, #FF9C8D 45.28%, #D655A5 65.79%, #6053CB 85.87%);-->
-              <!--                background-clip: text;-->
-              <!--                -webkit-background-clip: text;-->
-              <!--                -webkit-text-fill-color: transparent;-->
-              <!--                font-weight: 700;-->
-              <!--                display: inline-block;-->
-              <!--                width: 100%;">Layout</span>-->
-            </h4>
-
-            <div class="mt-4">
-              <p style="color: #444;">jameel backend V19 Gives You
-                The Fully Modified List View. This Table Design Gives
-                You More Beauty for Your Odoo Backend. It will Give You
-                a Clean Layout with the New Color Combination and a
-                Modified Font.</p>
-              <ul class="d-flex flex-column gap-3 ms-0 ps-0 mt-4">
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style="  color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Stages are Separated in View</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">New Color Combination </span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Modified Font</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Clean Layout</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Buttons with New Colors</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Full Screen View
-                  </span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-5"
-      style="background-color: #f1f5fd; border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;">
-      <div class="row d-flex align-items-center">
-        <div class="col col-12 col-md-12 col-lg-6">
-          <div style="padding: 20px;">
-            <h4 class="" style="font-size: 46px;">
-              <span class="gradient" style="background: linear-gradient(248.96deg, #FF9C8D 45.28%, #D655A5 65.79%, #6053CB 85.87%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: 700;
-                display: inline-block;
-                width: 100%;"><span class="under-line">Kanban Group View</span></span><br>
-            </h4>
-
-            <div class="mt-4">
-              <p style="color: #444; font-size: 16px;
-              font-weight: 400;
-              line-height: 1.5;">The jameel backend V19 Gives You a Fully
-                Modified Kanban View and Kanban Group View. The Section Wise
-                Separated Stages give a Pleasant Experience And an Extraordinary
-                Design To Your Content Tiles, Making The Tiles Look Great. It
-                will Give You a Clean Layout with the New Color Combination and
-                a Modified Font.</p>
-              <ul class="d-flex flex-column gap-3 ms-0 ps-0 mt-4">
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="./img/check.svg"
-                    style="width: 24px;"><span style="  color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Stages are Separated in View</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="./img/check.svg"
-                    style="width: 24px;"><span style="  color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">New Color Combination</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="./img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Modified Font</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="./img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Clean Layout</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="./img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Buttons with New Colors</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="./img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Full Screen View</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col col-12 col-md-12 col-lg-6">
-          <div>
-            <div>
-              <img class="img-fluid" src="./img/kanban_view.png" style="
-                border-radius: 20px;
-            ">
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Form view -->
-    <section class="mb-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #343534 0%, #4a4b4a 100%); border-radius: 24px; padding: 0;">
+    <!-- Enhanced visuals and elements content -->
+    <section class="mb-5 position-relative overflow-hidden"
+      style="background: linear-gradient(135deg, #343534 0%, #4a4b4a 100%); border-radius: 24px; padding: 0;">
       <!-- Decorative accent -->
-      <div class="position-absolute top-0 start-0 w-100" style="height: 4px; background: linear-gradient(90deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%);"></div>
+      <div class="position-absolute top-0 start-0 w-100"
+        style="height: 4px; background: linear-gradient(90deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%);"></div>
 
       <div class="row g-0 align-items-center">
         <div class="col-lg-6 order-2 order-lg-1">
           <div class="p-5 p-lg-5">
             <!-- Badge -->
-            <div class="d-inline-block mb-4 px-3 py-1 rounded-pill" style="background: rgba(217, 157, 42, 0.15); border: 1px solid #d99d2a;">
-              <span class="fw-semibold" style="color: #d99d2a; font-size: 13px; letter-spacing: 1px;">ENHANCED VIEW</span>
+            <div class="d-inline-block mb-4 px-3 py-1 rounded-pill"
+              style="background: rgba(217, 157, 42, 0.15); border: 1px solid #d99d2a;">
+              <span class="fw-semibold" style="color: #d99d2a; font-size: 13px; letter-spacing: 1px;">ADAPTIVE
+                DESIGN</span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="text-white mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2;">
+              Fully <span style="color: #d99d2a;">Responsive Layout</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="text-white-50 mb-5" style="font-size: 16px; line-height: 1.7;">
+              This theme adapts gracefully from full-scale desktop dashboards to compact mobile interfaces, preserving
+              clarity, balance, and usability at every breakpoint. Whether you're managing operations from a workstation
+              or checking updates on the go, the layout reshapes itself naturally—no clutter, no compromise. Every element
+              is thoughtfully scaled and repositioned to ensure smooth navigation, consistent visuals, and uninterrupted
+              workflows across desktops, tablets, and smartphones.
+            </p>
+
+            <!-- Features Grid -->
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Fully responsive</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Fly-out hamburger menu on the left</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Fits perfectly to all screen sizes</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Quick access menu at the bottom in discuss</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-5">
+              <a href="#Features" class="btn btn-lg px-5 py-3 rounded-3 text-decoration-none fw-semibold transition-all"
+                style="background: #d99d2a; color: #343534; border: none;">
+                Explore Features <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="p-4 p-lg-5 position-relative">
+            <!-- Image with glow effect -->
+            <div class="position-relative">
+              <div class="position-absolute top-50 start-50 translate-middle rounded-4"
+                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.15); filter: blur(60px); z-index: 0;">
+              </div>
+              <img class="img-fluid position-relative rounded-4" src="./img/responsive_layout.jpg"
+                style="border: 2px solid rgba(217, 157, 42, 0.3); z-index: 1;" alt="Responsive Layout">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- List view -->
+    <section class="mb-5 position-relative overflow-hidden"
+      style="background: linear-gradient(135deg, #343534 0%, #4a4b4a 100%); border-radius: 24px; padding: 0;">
+      <!-- Decorative accent -->
+      <div class="position-absolute top-0 start-0 w-100"
+        style="height: 4px; background: linear-gradient(90deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%);"></div>
+
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 order-1 order-lg-1">
+          <div class="p-4 p-lg-5 position-relative">
+            <!-- Image with glow effect -->
+            <div class="position-relative">
+              <div class="position-absolute top-50 start-50 translate-middle rounded-4"
+                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.15); filter: blur(60px); z-index: 0;">
+              </div>
+              <img class="img-fluid position-relative rounded-4" src="img/list_view_theme.png"
+                style="border: 2px solid rgba(217, 157, 42, 0.3); z-index: 1;" alt="List View">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-2 order-lg-2">
+          <div class="p-5 p-lg-5">
+            <!-- Badge -->
+            <div class="d-inline-block mb-4 px-3 py-1 rounded-pill"
+              style="background: rgba(217, 157, 42, 0.15); border: 1px solid #d99d2a;">
+              <span class="fw-semibold" style="color: #d99d2a; font-size: 13px; letter-spacing: 1px;">DATA
+                MANAGEMENT</span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="text-white mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2;">
+              List <span style="color: #d99d2a;">View</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="text-white-50 mb-5" style="font-size: 16px; line-height: 1.7;">
+              jameel backend V19 gives you the fully modified list view. This table design gives you more beauty for your
+              Odoo backend. It will give you a clean layout with the new color combination and a modified font.
+            </p>
+
+            <!-- Features Grid -->
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Stages are Separated in View</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">New Color Combination</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Modified Font</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Clean Layout</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Buttons with New Colors</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Full Screen View</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-5">
+              <a href="#Features" class="btn btn-lg px-5 py-3 rounded-3 text-decoration-none fw-semibold transition-all"
+                style="background: #d99d2a; color: #343534; border: none;">
+                Explore Features <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kanban view -->
+    <section class="mb-5 position-relative overflow-hidden"
+      style="background: linear-gradient(135deg, #343534 0%, #4a4b4a 100%); border-radius: 24px; padding: 0;">
+      <!-- Decorative accent -->
+      <div class="position-absolute top-0 start-0 w-100"
+        style="height: 4px; background: linear-gradient(90deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%);"></div>
+
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="p-5 p-lg-5">
+            <!-- Badge -->
+            <div class="d-inline-block mb-4 px-3 py-1 rounded-pill"
+              style="background: rgba(217, 157, 42, 0.15); border: 1px solid #d99d2a;">
+              <span class="fw-semibold" style="color: #d99d2a; font-size: 13px; letter-spacing: 1px;">VISUAL
+                ORGANIZATION</span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="text-white mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2;">
+              Kanban <span style="color: #d99d2a;">Group View</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="text-white-50 mb-5" style="font-size: 16px; line-height: 1.7;">
+              jameel backend gives you a fully modified kanban view with section-wise separated stages. Clean layouts
+              with new color combinations and modified fonts.
+            </p>
+
+            <!-- Features Grid -->
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Stages Separated in View</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">New Color Combination</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Modified Font</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Clean Layout</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Buttons with New Colors</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Full Screen View</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-5">
+              <a href="#Features" class="btn btn-lg px-5 py-3 rounded-3 text-decoration-none fw-semibold transition-all"
+                style="background: #d99d2a; color: #343534; border: none;">
+                Explore Features <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="p-4 p-lg-5 position-relative">
+            <!-- Image with glow effect -->
+            <div class="position-relative">
+              <div class="position-absolute top-50 start-50 translate-middle rounded-4"
+                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.15); filter: blur(60px); z-index: 0;">
+              </div>
+              <img class="img-fluid position-relative rounded-4" src="./img/kanban_view.png"
+                style="border: 2px solid rgba(217, 157, 42, 0.3); z-index: 1;" alt="Kanban View">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Form view -->
+    <section class="mb-5 position-relative overflow-hidden"
+      style="background: linear-gradient(135deg, #343534 0%, #4a4b4a 100%); border-radius: 24px; padding: 0;">
+      <!-- Decorative accent -->
+      <div class="position-absolute top-0 start-0 w-100"
+        style="height: 4px; background: linear-gradient(90deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%);"></div>
+
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="p-5 p-lg-5">
+            <!-- Badge -->
+            <div class="d-inline-block mb-4 px-3 py-1 rounded-pill"
+              style="background: rgba(217, 157, 42, 0.15); border: 1px solid #d99d2a;">
+              <span class="fw-semibold" style="color: #d99d2a; font-size: 13px; letter-spacing: 1px;">ENHANCED
+                VIEW</span>
             </div>
 
             <!-- Heading -->
@@ -993,38 +601,45 @@
 
             <!-- Description -->
             <p class="text-white-50 mb-5" style="font-size: 16px; line-height: 1.7;">
-              jameel backend gives you a fully modified form view with a full-screen experience. Clean layouts with new color combinations and modified fonts.
+              jameel backend gives you a fully modified form view with a full-screen experience. Clean layouts with new
+              color combinations and modified fonts.
             </p>
 
             <!-- Features Grid -->
             <div class="row g-3">
               <div class="col-sm-6">
-                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
                   <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Modified Form Style</h6>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
                   <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Required Field Style</h6>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
                   <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Full Screen View</h6>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
                   <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">New Chatter Style</h6>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
                   <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">New Tab Looks</h6>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
+                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
                   <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Status Button Style</h6>
                 </div>
               </div>
@@ -1041,7 +656,8 @@
 
             <!-- CTA Button -->
             <div class="mt-5">
-              <a href="#Features" class="btn btn-lg px-5 py-3 rounded-3 text-decoration-none fw-semibold transition-all" style="background: #d99d2a; color: #343534; border: none;">
+              <a href="#Features" class="btn btn-lg px-5 py-3 rounded-3 text-decoration-none fw-semibold transition-all"
+                style="background: #d99d2a; color: #343534; border: none;">
                 Explore Features <i class="fas fa-arrow-right ms-2"></i>
               </a>
             </div>
@@ -1051,8 +667,11 @@
           <div class="p-4 p-lg-5 position-relative">
             <!-- Image with glow effect -->
             <div class="position-relative">
-              <div class="position-absolute top-50 start-50 translate-middle rounded-4" style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.15); filter: blur(60px); z-index: 0;"></div>
-              <img class="img-fluid position-relative rounded-4" src="img/form_view.png" style="border: 2px solid rgba(217, 157, 42, 0.3); z-index: 1;" alt="Form View">
+              <div class="position-absolute top-50 start-50 translate-middle rounded-4"
+                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.15); filter: blur(60px); z-index: 0;">
+              </div>
+              <img class="img-fluid position-relative rounded-4" src="img/form_view.png"
+                style="border: 2px solid rgba(217, 157, 42, 0.3); z-index: 1;" alt="Form View">
             </div>
           </div>
         </div>
