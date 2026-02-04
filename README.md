@@ -2,10 +2,6 @@
 
 A minimalist and elegant backend theme for Odoo 19 Community Edition. This theme transforms your Odoo backend with a clean design, sophisticated gold & grey color palette, and improved user experience.
 
-## Banner
-
-![Banner](static/description/banner.jpg)
-
 ## Features
 
 ### 1. Modified Structure for All Type Views
