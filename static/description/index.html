@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   <style>
     :root {
       --primary-color: #F5C000;
@@ -974,74 +974,85 @@
       </div>
     </section>
     <!-- Form view -->
-    <section class="mb-5"
-      style="background: linear-gradient(to top, rgb(253 254 255), #E5EEFF); border: 1px solid #D6E0FF; border-radius: 20px; padding: 40px;">
-      <div class="row d-flex align-items-center">
-        <div class="col col-12 col-md-12 col-lg-6">
-          <div>
-            <div>
-              <img class="img-fluid" src="img/form_view.png" style="
-                border-radius: 20px;
-            ">
+    <section class="mb-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #343534 0%, #4a4b4a 100%); border-radius: 24px; padding: 0;">
+      <!-- Decorative accent -->
+      <div class="position-absolute top-0 start-0 w-100" style="height: 4px; background: linear-gradient(90deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%);"></div>
+
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="p-5 p-lg-5">
+            <!-- Badge -->
+            <div class="d-inline-block mb-4 px-3 py-1 rounded-pill" style="background: rgba(217, 157, 42, 0.15); border: 1px solid #d99d2a;">
+              <span class="fw-semibold" style="color: #d99d2a; font-size: 13px; letter-spacing: 1px;">ENHANCED VIEW</span>
             </div>
 
+            <!-- Heading -->
+            <h2 class="text-white mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2;">
+              Form <span style="color: #d99d2a;">View</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="text-white-50 mb-5" style="font-size: 16px; line-height: 1.7;">
+              jameel backend gives you a fully modified form view with a full-screen experience. Clean layouts with new color combinations and modified fonts.
+            </p>
+
+            <!-- Features Grid -->
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Modified Form Style</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Required Field Style</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Full Screen View</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">New Chatter Style</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">New Tab Looks</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
+                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Status Button Style</h6>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .feature-card:hover {
+                background: rgba(217, 157, 42, 0.15) !important;
+                border-color: rgba(217, 157, 42, 0.5) !important;
+                box-shadow: 0 0 20px rgba(217, 157, 42, 0.3), 0 0 40px rgba(217, 157, 42, 0.1);
+                transform: translateY(-2px);
+              }
+            </style>
+
+            <!-- CTA Button -->
+            <div class="mt-5">
+              <a href="#Features" class="btn btn-lg px-5 py-3 rounded-3 text-decoration-none fw-semibold transition-all" style="background: #d99d2a; color: #343534; border: none;">
+                Explore Features <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="col col-12 col-md-12 col-lg-6">
-          <div style="padding: 20px;">
-            <h4 class="" style="font-size: 46px;">
-              <span class="gradient" style="background: linear-gradient(248.96deg, #FF9C8D 45.28%, #D655A5 65.79%, #6053CB 85.87%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: 700;
-                display: inline-block;
-                width: 100%;"><span class="under-line">Form View</span></span><br>
-            </h4>
-
-            <div class="mt-4">
-              <p style="color: #444;">jameel backend Gives You The
-                Fully Modified Form View with a Full Screen Experience.
-                It will Give You a Clean Layout with the New Color
-                Combination and a Modified Font.</p>
-              <ul class="d-flex flex-column gap-3 ms-0 ps-0 mt-4">
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style="  color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Modified Form Style</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">New Style for Required Field</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">Full Screen Form View</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">New Chatter Style Under Form View</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">New Looks for Tabs</span></li>
-                <li style="list-style: none;" class="d-flex align-items-center gap-2"><img src="img/check.svg"
-                    style="width: 24px;"><span style=" color: #444;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;">New Looks for Status Button</span></li>
-              </ul>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="p-4 p-lg-5 position-relative">
+            <!-- Image with glow effect -->
+            <div class="position-relative">
+              <div class="position-absolute top-50 start-50 translate-middle rounded-4" style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.15); filter: blur(60px); z-index: 0;"></div>
+              <img class="img-fluid position-relative rounded-4" src="img/form_view.png" style="border: 2px solid rgba(217, 157, 42, 0.3); z-index: 1;" alt="Form View">
             </div>
           </div>
         </div>
