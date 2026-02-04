@@ -1592,8 +1592,103 @@ select.o_field_widget.o_input.o_input_dropdown .o_dropdown_button {
 	color: #173e43 !important;
 }
 
+// ============================================================================
+// Link Buttons - From Right Animation
+// ============================================================================
+
 .btn-link {
-	color: #173e43 !important;
+	position: relative !important;
+	color: $secondary_color !important;
+	font-weight: 700 !important;
+	text-decoration: none !important;
+	padding: 0 4px !important;
+	transition: color 0.3s ease !important;
+
+	// Hide the arrow icon
+	.oi-arrow-right {
+		display: none !important;
+	}
+
+	// Create the animated underline effect
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		//left: 0;
+		width: 0;
+		height: 100%;
+		border-top: 0 !important;
+		border-bottom: 2px solid $primary_color !important;
+		transition: width 0.3s ease !important;
+	}
+
+	&:hover {
+		color: $secondary_color !important;
+		text-decoration: none !important;
+
+		&::before {
+			width: 100%;
+		}
+	}
+}
+
+// oe_link - same from-right animation
+.oe_link {
+	position: relative !important;
+	color: $secondary_color !important;
+	font-weight: 700 !important;
+	text-decoration: none !important;
+	padding: 0 4px !important;
+	transition: color 0.3s ease !important;
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 6px !important;
+
+	// All a elements inside oe_link
+	a {
+		color: black !important;
+		font-weight: 700 !important;
+	}
+
+	// Hide the arrow icon
+	.oi-arrow-right {
+		display: none !important;
+	}
+
+	// Add link icon
+	&::after {
+		content: '↗';
+		font-size: 0.85em;
+		color: black;
+		opacity: 0.7;
+		transition: opacity 0.2s ease, transform 0.2s ease;
+	}
+
+	&:hover::after {
+		opacity: 1;
+		transform: translate(2px, -2px);
+	}
+
+	// Create the animated underline effect
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 2px;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background: $primary_color !important;
+		transition: width 0.3s ease !important;
+	}
+
+	&:hover {
+		color: $secondary_color !important;
+		text-decoration: none !important;
+
+		&::before {
+			width: 100%;
+		}
+	}
 }
 
 .o_field_many2manytags {
