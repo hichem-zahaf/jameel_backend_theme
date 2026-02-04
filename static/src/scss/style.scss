@@ -387,6 +387,46 @@ body {
 	color: $primary_color !important;
 }
 
+// Search box dropdown toggler
+.o_searchview_dropdown_toggler {
+	background-color: white !important;
+	border: 1px solid #d1d5db !important;
+	border-left: none !important;
+	border-radius: 0 8px 8px 0 !important;
+	padding: 8px 16px !important;
+	color: #9ca3af !important;
+	transition: all 0.2s ease !important;
+
+	&:hover {
+		background-color: #f9fafb !important;
+		border-color: #9ca3af !important;
+		color: $secondary_color !important;
+	}
+
+	&:active,
+	&:focus {
+		background-color: #f3f4f6 !important;
+		box-shadow: none !important;
+	}
+
+	&:focus {
+		border-color: $primary_color !important;
+		color: $primary_color !important;
+	}
+
+	// When search box has focus, also style the toggler
+	.o_cp_searchview:focus-within & {
+		border-color: $primary_color !important;
+	}
+}
+
+// Fix search container border radius
+.o_cp_searchview {
+	.o_searchview {
+		border-radius: 8px 0 0 8px !important;
+	}
+}
+
 .o_control_panel>div {
 	margin: 15px 0px !important;
 }
@@ -1377,32 +1417,32 @@ select.o_field_widget.o_input.o_input_dropdown .o_dropdown_button {
 	.o_kanban_view.o_kanban_ungrouped {
 		padding: 15px 20px !important;
 		margin: 20px 20px;
-		border-radius: 3px;
+		border-radius: 4px;
 	}
 
-	.o_kanban_view .o_kanban_record {
-		border-radius: 5px;
+	.o_kanban_renderer .o_kanban_record:not(.o_kanban_ghost) {
+		// Card base styling
+		border-radius: 4px;
 		margin: 15px;
-		box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
-		-webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
-		-moz-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
-		transition: box-shadow 0.3s ease-out, transform 0.3s ease-out, opacity 0.2s ease-out;
-		border: none;
-		transform: translate(0px, 0px);
-		-webkit-transform: translate(0px, 0px);
-		-moz-transform: translate(0px, 0px);
-		-webkit-transition: 0.5s;
-		transition: 0.5s;
+		background-color: white !important;
+		border: 1px solid #e5e7eb !important;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+		transform: translateY(0) !important;
 
 		&:hover {
-			transform: translate(0, -4px);
-			-webkit-transform: translate(0, -4px);
-			-moz-transform: translate(0, -4px);
-			-webkit-transition: 0.5s;
-			transition: 0.5s;
-			box-shadow: rgba(45, 45, 45, 0.05) 0px 2px 2px, rgba(49, 49, 49, 0.05) 0px 4px 4px,
-				rgba(42, 42, 42, 0.05) 0px 8px 8px, rgba(32, 32, 32, 0.05) 0px 16px 16px,
-				rgba(49, 49, 49, 0.05) 0px 32px 32px, rgba(35, 35, 35, 0.05) 0px 64px 64px;
+			transform: translateY(-4px) !important;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06), 0 10px 20px rgba(0, 0, 0, 0.08), 0 16px 32px rgba(0, 0, 0, 0.06) !important;
+			border-color: rgba(217, 157, 42, 0.2) !important;
+		}
+
+		.btn-link::before{
+			display: none !important;
+		}
+		
+		&:active {
+			transform: translateY(-2px) !important;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 6px 12px rgba(0, 0, 0, 0.06) !important;
 		}
 
 		.o_kanban_record_title {
@@ -1413,6 +1453,72 @@ select.o_field_widget.o_input.o_input_dropdown .o_dropdown_button {
 
 		.badge-default {
 			color: #f88181 !important;
+		}
+
+		// Footer styling in kanban cards
+		footer {
+			margin-top: auto;
+			padding-top: 12px;
+
+			.text-muted {
+				font-size: 12px;
+				color: #6b7280 !important;
+			}
+		}
+
+		// Badge styling in kanban cards
+		.badge {
+			font-size: 11px !important;
+			font-weight: 600 !important;
+			letter-spacing: 0.025em !important;
+			padding: 4px 10px !important;
+			border-radius: 6px !important;
+		}
+
+		// Monetary amount styling
+		.o_field_monetary {
+			font-weight: 700 !important;
+			color: $secondary_color !important;
+		}
+	}
+}
+
+// ============================================================================
+// Kanban View - Additional Enhancements for Grouped Views
+// ============================================================================
+
+.o_kanban_renderer.o_kanban_grouped {
+	.o_kanban_record {
+		border-radius: 4px;
+		background-color: white !important;
+		border: 1px solid #e5e7eb !important;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+		transform: translateY(0) !important;
+		margin-bottom: 12px;
+
+		&:hover {
+			transform: translateY(-4px) !important;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06), 0 10px 20px rgba(0, 0, 0, 0.08), 0 16px 32px rgba(0, 0, 0, 0.06) !important;
+			border-color: rgba(217, 157, 42, 0.2) !important;
+		}
+
+		> div:not(.o_dropdown_kanban) {
+			border-radius: px !important;
+			border: 1px solid #e5e7eb !important;
+		}
+	}
+
+	// Column styling
+	.o_kanban_group {
+		background-color: transparent !important;
+		border: none !important;
+
+		&.o_kanban_group_sorted {
+			background: #f9fafb !important;
+			border-radius: 12px !important;
+			padding: 12px !important;
+			margin: 0 8px !important;
 		}
 	}
 }
@@ -2177,11 +2283,6 @@ strong {
 	background-color: white;
 }
 
-.o_kanban_renderer .o_kanban_record>div:not(.o_dropdown_kanban),
-.o_kanban_renderer .o_kanban_quick_create {
-	border: 1px solid white;
-	background-color: white;
-}
 
 .o_control_panel .o_cp_bottom_right {
 	align-items: center;
