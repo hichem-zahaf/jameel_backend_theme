@@ -3955,3 +3955,130 @@ td .o_field_widget .text-bg-success {
         border: 2px solid white !important;
     }
 }
+
+// ============================================================
+// Tour Pointer (Overlay Guide) - Modern Gold Design
+// ============================================================
+
+// Target only the tour overlay elements
+.o-overlay-container {
+    .o-overlay-item {
+        .o_tour_pointer {
+            // Modern pulsing ring pointer - gold color
+            background: $primary_color !important;
+            border-radius: 50% !important;
+            box-shadow: 0 0 0 0 rgba(217, 157, 42, 0.7) !important;
+            animation: tourPulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1) !important;
+
+            // Create keyframe animation inline
+            @keyframes tourPulse {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(217, 157, 42, 0.7) !important;
+                }
+                70% {
+                    box-shadow: 0 0 0 12px rgba(217, 157, 42, 0) !important;
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(217, 157, 42, 0) !important;
+                }
+            }
+
+            // Remove old drop shape tip
+            .o_tour_pointer_tip {
+                display: none !important;
+            }
+
+            // Content popover - shadcn style white card
+            .o_tour_pointer_content {
+                background: white !important;
+                border: 1px solid #e5e7eb !important;
+                border-radius: 12px !important;
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+                color: $secondary_color !important;
+                font-size: 14px !important;
+                line-height: 1.6 !important;
+                padding: 16px 20px !important;
+                max-width: 320px !important;
+                min-width: 200px !important;
+
+                b, strong {
+                    color: $primary_color !important;
+                    font-weight: 600 !important;
+                }
+
+                // Add subtle arrow pointing to the pointer
+                &::before {
+                    display: none
+                }
+
+                // Position arrow based on pointer position
+                // Bottom positioned (pointer above popover)
+                &.o_bottom {
+                    margin-top: 12px !important;
+
+                    &::before {
+                        top: -7px !important;
+                        left: calc(50% - 6px) !important;
+                        border-bottom: none !important;
+                        border-right: none !important;
+                    }
+                }
+
+                // Top positioned (pointer below popover)
+                &.o_top {
+                    margin-bottom: 12px !important;
+
+                    &::before {
+                        bottom: -7px !important;
+                        left: calc(50% - 6px) !important;
+                        border-top: none !important;
+                        border-left: none !important;
+                    }
+                }
+
+                // Left positioned (pointer to right)
+                &.o_left {
+                    margin-right: 12px !important;
+
+                    &::before {
+                        top: calc(50% - 6px) !important;
+                        right: -7px !important;
+                        border-top: none !important;
+                        border-right: none !important;
+                    }
+                }
+
+                // Right positioned (pointer to left)
+                &.o_right {
+                    margin-left: 12px !important;
+
+                    &::before {
+                        top: calc(50% - 6px) !important;
+                        left: -7px !important;
+                        border-bottom: none !important;
+                        border-left: none !important;
+                    }
+                }
+            }
+
+            // Bouncing animation enhancement
+            &.o_bouncing {
+                animation: tourPulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1), tourBounce 1s ease-in-out infinite !important;
+
+                @keyframes tourBounce {
+                    0%, 100% {
+                        transform: translateY(0) !important;
+                    }
+                    50% {
+                        transform: translateY(-4px) !important;
+                    }
+                }
+            }
+
+            // Size variations
+            &[style*="--TourPointer__width"] {
+                // Respect the CSS variable sizing while maintaining our styles
+            }
+        }
+    }
+}
