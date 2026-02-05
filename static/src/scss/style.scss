@@ -1691,6 +1691,13 @@ td {
 // ============================================================================
 // Base Button Styles - Modern Minimal Design
 // ============================================================================
+.badge.text-bg-default, .badge.bg-light, .badge.text-bg-light, .badge.bg-default, .badge.text-primary {
+    outline: 1px solid $primary_color;
+    outline-offset: -1px;
+	color : $primary_color !important;
+}
+
+
 
 .btn-primary {
 	background-color: $primary_color !important;
