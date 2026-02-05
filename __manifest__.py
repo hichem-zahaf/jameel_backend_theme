@@ -2,8 +2,8 @@
     "name": "Jameel Backend Theme",
     "version": "18.0",
     "description": "Minimalist and elegant backend "
-                   "theme for Odoo 19, Backend Theme",
-    "summary": "Jameel Backend Theme V19 is an attractive theme for backend",
+                   "theme for Odoo 18, Backend Theme",
+    "summary": "Jameel Backend Theme V18 is an attractive theme for backend",
     "category": "Themes/Backend",
     'author': 'llmarifa',
     'company': 'llmarifa',
@@ -11,7 +11,6 @@
     'website': "https://www.llmarifa.co",
     "depends": ['base', 'web', 'mail'],
     "data": [
-        'views/icons.xml',
         'views/layout.xml',
     ],
     'assets': {
