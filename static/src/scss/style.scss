@@ -410,6 +410,8 @@ body {
 // Search Box - Shadcn Inspired
 // ============================================================================
 
+.o_searchview .o_searchview_facet:hover 
+
 .o_searchview .o_searchview_facet .o_searchview_facet_label {
 	background-color: $primary_color !important;
 	border-color: none;
@@ -874,8 +876,7 @@ body {
 						color: $secondary_color !important;
 						font-weight: 600 !important;
 						background: white !important;
-						border-color: #d1d5db !important;
-						border-bottom: 1px solid white !important; // Hides bottom border
+						border: none;
 						margin-bottom: -1px !important; // Overlap with content border
 						z-index: 1 !important;
 						box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.02) !important;
@@ -895,7 +896,6 @@ body {
 	// Tab content styling - white background with border
 	.o_notebook_content {
 		background: white !important;
-		border: 1px solid #d1d5db !important;
 		border-top: none !important;
 		border-radius: 0 0 8px 8px !important;
 		padding: 20px !important;
@@ -2873,7 +2873,7 @@ s
 		text-decoration: none !important;
 
 		&::before {
-			width: 100%;
+			width: 80%;
 		}
 	}
 }
@@ -3439,6 +3439,18 @@ td .o_field_widget .text-bg-success {
 	}
 }
 
+// Match breadcrumb actions button size with breadcrumb title
+.o_control_panel_breadcrumbs_actions {
+	.o_cp_action_menus button {
+		font-size: 24px !important;
+		padding: 8px !important;
+	}
+
+	.o_cp_action_menus button i {
+		font-size: inherit !important;
+	}
+}
+
 .o_form_view .o_field_widget.o_input_3ch input {
 	width: 100% !important;
 }
@@ -3528,7 +3540,6 @@ td .o_field_widget .text-bg-success {
         border-color: inherit !important;
     }
 }
-
 // Settings pane checkbox margin
 .o_setting_right_pane .o-checkbox {
     margin-left: 20px;
@@ -4055,4 +4066,11 @@ td .o_field_widget .text-bg-success {
             }
         }
     }
+}
+
+// ============================================================================
+// Kanban View - Additional Enhancements for Grouped Views
+// ============================================================================
+.o-mail-DiscussSystray-class{
+	height: max-content;
 }
