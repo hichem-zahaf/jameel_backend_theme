@@ -550,6 +550,9 @@ body {
 						background-color: rgba(217, 157, 42, 0.05) !important;
 					}
 				}
+				&.o_list_record_selector{
+					padding-left: 20px !important;
+				}
 
 				// Sort icon styling
 				.o_list_sortable_caret {
