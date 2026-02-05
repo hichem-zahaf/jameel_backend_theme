@@ -34,8 +34,6 @@
     ],
     'icon': 'static/description/icon.png',
     'license': 'LGPL-3',
-    'pre_init_hook': 'init_hooks',
-    'post_init_hook': 'init_hooks',
     'installable': True,
     'application': False,
     'auto_install': False,
