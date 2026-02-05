@@ -12,6 +12,8 @@
     'price': '80.00',
     'website': "https://www.llmarifa.co",
     "depends": ['base', 'web', 'mail'],
+    "currency": 'USD',
+    "price": '80.00',
     "data": [
         'views/layout.xml',
     ],
