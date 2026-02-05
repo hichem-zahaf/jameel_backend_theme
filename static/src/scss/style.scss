@@ -1697,7 +1697,7 @@ td {
 	border-color: $primary_color !important;
 	color: white !important;
 	border-radius: 6px !important;
-	padding: 8px 16px !important;
+	padding: 2px 8px !important;
 	font-size: 13px !important;
 	font-weight: 500 !important;
 	letter-spacing: 0.01em !important;
@@ -1953,7 +1953,10 @@ s
 	padding: 4px 10px !important;
 	color: white;
 }
-
+.btn-primary.o_web_settings_invite{
+	margin-left: 4px;
+    margin-top: 8px;
+}
 .o_Message_actionListContainer {
 	position: absolute;
 	top: -0.5rem;
@@ -4073,4 +4076,223 @@ td .o_field_widget .text-bg-success {
 // ============================================================================
 .o-mail-DiscussSystray-class{
 	height: max-content;
+}
+
+// ============================================================================
+// Calendar View - Modern Design
+// ============================================================================
+.o_calendar_wrapper {
+	// Main calendar container
+	.fc {
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	}
+
+	// Calendar wrapper - subtle shadow and rounded corners
+	.o_calendar_widget {
+		border-radius: 16px;
+		overflow: hidden;
+		background: #ffffff;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.08);
+	}
+
+	// View harness
+	.fc-view-harness {
+		background: #ffffff;
+		border-radius: 16px;
+		overflow: hidden;
+	}
+
+	// Grid table
+	.fc-scrollgrid {
+		border: none;
+	}
+
+	// Remove default borders and add modern spacing
+	.fc-scrollgrid-section,
+	.fc-scrollgrid-section-header,
+	.fc-scrollgrid-section-body {
+		border: none;
+	}
+
+	// Day header cells (Sun, Mon, Tue, etc.)
+	.fc-col-header-cell {
+		padding: 16px 8px 12px;
+		border: none;
+
+		.fc-col-header-cell-cushion {
+			color: $secondary_color;
+			font-size: 13px;
+			font-weight: 600;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			padding: 8px 12px;
+			border-radius: 8px;
+			transition: all 0.2s ease;
+
+			.o_cw_day_name {
+				color: inherit;
+			}
+
+			&:hover {
+				background: rgba($primary_color, 0.08);
+				color: $primary_color;
+			}
+		}
+
+		// Weekend days - subtle styling
+		&.fc-day-sun,
+		&.fc-day-sat {
+			.fc-col-header-cell-cushion {
+				color: rgba($secondary_color, 0.6);
+			}
+		}
+	}
+
+	// Day cells
+	.fc-daygrid-day {
+		background: #ffffff;
+		border: none;
+		border-right: 1px solid #f3f4f6;
+		border-bottom: 1px solid #f3f4f6;
+		padding: 8px;
+		transition: all 0.2s ease;
+
+		&:hover {
+			background: #f3f4f6;
+		}
+
+		// Today highlight
+		&.fc-day-today {
+			background: linear-gradient(135deg, rgba($primary_color, 0.03) 0%, rgba($primary_color, 0.01) 100%);
+
+			.fc-daygrid-day-number {
+				background: $primary_color;
+				color: #ffffff;
+				font-weight: 700;
+				box-shadow: 0 2px 8px rgba($primary_color, 0.35);
+			}
+			.fc-daygrid-day-number:before{
+				display : none !important;
+			}
+		}
+
+		// Past days
+		&.fc-day-past {
+			.fc-daygrid-day-number {
+				color: rgba($secondary_color, 0.5);
+			}
+		}
+
+		// Weekend styling
+		&.fc-day-sun,
+		&.fc-day-sat {
+			background: #f3f4f6;
+		}
+	}
+
+	// Day number
+	.fc-daygrid-day-number {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 32px;
+		height: 32px;
+		padding: 0;
+		color: $secondary_color;
+		font-size: 14px;
+		font-weight: 500;
+		border-radius: 50%;
+		transition: all 0.2s ease;
+		text-decoration: none;
+
+		&:hover {
+			background: rgba($primary_color, 0.1);
+			color: $primary_color;
+		}
+	}
+
+	// Week number
+	.fc-daygrid-week-number {
+		color: rgba($secondary_color, 0.5);
+		font-size: 11px;
+		font-weight: 500;
+		padding: 4px 8px;
+		background: rgba($secondary_color, 0.05);
+		border-radius: 12px;
+	}
+
+	// Day frame
+	.fc-daygrid-day-frame {
+		min-height: 100px;
+	}
+
+	// More link (when there are too many events)
+	.fc-daygrid-more-link {
+		color: $primary_color;
+		font-size: 12px;
+		font-weight: 500;
+		margin-top: 4px;
+		padding: 4px 8px;
+		border-radius: 6px;
+		transition: all 0.2s ease;
+
+		&:hover {
+			background: rgba($primary_color, 0.1);
+		}
+	}
+
+	// Events styling
+	.fc-event {
+		border: none;
+		border-radius: 8px;
+		padding: 4px 10px;
+		font-size: 12px;
+		font-weight: 500;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		transition: all 0.2s ease;
+		cursor: pointer;
+
+		&:hover {
+			transform: translateY(-1px);
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		}
+
+		.fc-event-main {
+			color: inherit;
+		}
+
+		.fc-event-title {
+			font-weight: 500;
+		}
+	}
+
+	// Event dots
+	.fc-daygrid-event-dot {
+		border-color: currentColor;
+		border-radius: 50%;
+	}
+
+	// Scroller styling
+	.fc-scroller {
+		&-liquid-absolute {
+			background: #ffffff;
+		}
+	}
+
+	// Remove separator lines
+	.fc-scrollgrid-sync-table {
+		border-left: none;
+	}
+
+	// Body wrapper
+	.fc-daygrid-body {
+		background: #ffffff;
+	}
+
+	// Unbalanced days
+	.fc-daygrid-body-unbalanced {
+		.fc-daygrid-day {
+			min-height: 100px;
+		}
+	}
 }
