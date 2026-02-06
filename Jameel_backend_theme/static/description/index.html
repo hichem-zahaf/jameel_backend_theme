@@ -13,14 +13,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   <style>
     :root {
-      --primary-color: #F5C000;
-      --bg-white: #fff;
-      --text-color: #121212;
-      --text-color-light: #64728f;
+      --primary-color: #d99d2a;
+      --bg-white: #ffffff;
+      --bg-light: #f8f9fa;
+      --bg-section: #ffffff;
+      --text-color: #343534;
+      --text-color-light: #64748b;
+      --border-color: #e5e7eb;
     }
 
     body {
       font-family: "Montserrat", sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .feature-card-featured:hover {
+      background: rgba(217, 157, 42, 0.1) !important;
+      border-color: rgba(217, 157, 42, 0.4) !important;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(217, 157, 42, 0.2);
+    }
+
+    .feature-card-featured:hover i {
+      transform: scale(1.1);
+    }
+
+    .feature-card:hover {
+      background: rgba(217, 157, 42, 0.1) !important;
+      border-color: rgba(217, 157, 42, 0.4) !important;
+      box-shadow: 0 0 20px rgba(217, 157, 42, 0.15);
+      transform: translateY(-2px);
     }
   </style>
 </head>
@@ -152,7 +174,7 @@
 
     <!--feature section  -->
     <section class="my-5 position-relative overflow-hidden" id="Features"
-      style="background: linear-gradient(135deg, #343534 0%, #4a4b4a 100%); border-radius: 24px; padding: 60px 40px;">
+      style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 24px; padding: 60px 40px;">
       <!-- Decorative accent -->
       <div class="position-absolute top-0 start-0 w-100"
         style="height: 4px; background: linear-gradient(90deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%);"></div>
@@ -161,19 +183,19 @@
       <div class="text-center mb-5 position-relative" style="z-index: 1;">
         <!-- Badge -->
         <div class="d-inline-block mb-4 px-4 py-2 rounded-pill"
-          style="background: rgba(217, 157, 42, 0.15); border: 1px solid #d99d2a;">
+          style="background: rgba(217, 157, 42, 0.1); border: 1px solid #d99d2a;">
           <span class="fw-semibold" style="color: #d99d2a; font-size: 13px; letter-spacing: 1.5px;">
             WHY CHOOSE US
           </span>
         </div>
 
         <!-- Heading -->
-        <h2 class="text-white mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2;">
+        <h2 class="mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2; color: #343534;">
           Discover Our <span style="color: #d99d2a;">Features</span>
         </h2>
 
         <!-- Description -->
-        <p class="text-white-50 mx-auto" style="font-size: 16px; line-height: 1.7; max-width: 700px;">
+        <p class="mb-0 mx-auto" style="font-size: 16px; line-height: 1.7; max-width: 700px; color: #64748b;">
           Jameel Backend V19 gives you a fully modified view with a full-screen display. This is a minimalist and elegant
           backend theme for Odoo 19 that will change your old experience to a new one. It will give you a clean layout
           with a new color combination and a modified font.
@@ -185,15 +207,15 @@
         <!-- Feature 1 -->
         <div class="col-lg-4 col-md-6">
           <div class="h-100 p-4 p-lg-5 rounded-4 transition-all feature-card-featured"
-            style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(217, 157, 42, 0.15);">
+            style="background: #f8f9fa; border: 1px solid #e5e7eb;">
             <div class="d-flex align-items-start gap-3 mb-3">
               <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-3"
                 style="width: 48px; height: 48px; background: rgba(217, 157, 42, 0.15); font-size: 20px; color: #d99d2a;">
                 1
               </div>
-              <h5 class="text-white mb-0" style="font-size: 18px; font-weight: 600;">Modified Structure for All Type Views</h5>
+              <h5 class="mb-0" style="font-size: 18px; font-weight: 600; color: #343534;">Modified Structure for All Type Views</h5>
             </div>
-            <p class="text-white-50 mb-0" style="font-size: 14px; line-height: 1.6;">
+            <p class="mb-0" style="font-size: 14px; line-height: 1.6; color: #64748b;">
               All views including Kanban, List, Form, and more have been redesigned with a modern, clean layout.
             </p>
           </div>
@@ -202,15 +224,15 @@
         <!-- Feature 2 -->
         <div class="col-lg-4 col-md-6">
           <div class="h-100 p-4 p-lg-5 rounded-4 transition-all feature-card-featured"
-            style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(217, 157, 42, 0.15);">
+            style="background: #f8f9fa; border: 1px solid #e5e7eb;">
             <div class="d-flex align-items-start gap-3 mb-3">
               <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-3"
                 style="width: 48px; height: 48px; background: rgba(217, 157, 42, 0.15); font-size: 20px; color: #d99d2a;">
                 2
               </div>
-              <h5 class="text-white mb-0" style="font-size: 18px; font-weight: 600;">New Style for Active Elements</h5>
+              <h5 class="mb-0" style="font-size: 18px; font-weight: 600; color: #343534;">New Style for Active Elements</h5>
             </div>
-            <p class="text-white-50 mb-0" style="font-size: 14px; line-height: 1.6;">
+            <p class="mb-0" style="font-size: 14px; line-height: 1.6; color: #64748b;">
               Active menus, radio buttons, and checkboxes have a fresh, modern design with improved usability.
             </p>
           </div>
@@ -219,15 +241,15 @@
         <!-- Feature 3 -->
         <div class="col-lg-4 col-md-6">
           <div class="h-100 p-4 p-lg-5 rounded-4 transition-all feature-card-featured"
-            style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(217, 157, 42, 0.15);">
+            style="background: #f8f9fa; border: 1px solid #e5e7eb;">
             <div class="d-flex align-items-start gap-3 mb-3">
               <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-3"
                 style="width: 48px; height: 48px; background: rgba(217, 157, 42, 0.15); font-size: 20px; color: #d99d2a;">
                 3
               </div>
-              <h5 class="text-white mb-0" style="font-size: 18px; font-weight: 600;">New Color Combination</h5>
+              <h5 class="mb-0" style="font-size: 18px; font-weight: 600; color: #343534;">New Color Combination</h5>
             </div>
-            <p class="text-white-50 mb-0" style="font-size: 14px; line-height: 1.6;">
+            <p class="mb-0" style="font-size: 14px; line-height: 1.6; color: #64748b;">
               A sophisticated gold & grey color palette that brings elegance and professionalism to your backend.
             </p>
           </div>
@@ -236,15 +258,15 @@
         <!-- Feature 4 -->
         <div class="col-lg-4 col-md-6">
           <div class="h-100 p-4 p-lg-5 rounded-4 transition-all feature-card-featured"
-            style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(217, 157, 42, 0.15);">
+            style="background: #f8f9fa; border: 1px solid #e5e7eb;">
             <div class="d-flex align-items-start gap-3 mb-3">
               <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-3"
                 style="width: 48px; height: 48px; background: rgba(217, 157, 42, 0.15); font-size: 20px; color: #d99d2a;">
                 4
               </div>
-              <h5 class="text-white mb-0" style="font-size: 18px; font-weight: 600;">New Look for All Applications</h5>
+              <h5 class="mb-0" style="font-size: 18px; font-weight: 600; color: #343534;">New Look for All Applications</h5>
             </div>
-            <p class="text-white-50 mb-0" style="font-size: 14px; line-height: 1.6;">
+            <p class="mb-0" style="font-size: 14px; line-height: 1.6; color: #64748b;">
               Every application gets a fresh, modern appearance that enhances the overall user experience.
             </p>
           </div>
@@ -253,15 +275,15 @@
         <!-- Feature 5 -->
         <div class="col-lg-4 col-md-6">
           <div class="h-100 p-4 p-lg-5 rounded-4 transition-all feature-card-featured"
-            style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(217, 157, 42, 0.15);">
+            style="background: #f8f9fa; border: 1px solid #e5e7eb;">
             <div class="d-flex align-items-start gap-3 mb-3">
               <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-3"
                 style="width: 48px; height: 48px; background: rgba(217, 157, 42, 0.15); font-size: 20px; color: #d99d2a;">
                 5
               </div>
-              <h5 class="text-white mb-0" style="font-size: 18px; font-weight: 600;">Clean Layout and New Font Style</h5>
+              <h5 class="mb-0" style="font-size: 18px; font-weight: 600; color: #343534;">Clean Layout and New Font Style</h5>
             </div>
-            <p class="text-white-50 mb-0" style="font-size: 14px; line-height: 1.6;">
+            <p class="mb-0" style="font-size: 14px; line-height: 1.6; color: #64748b;">
               Improved typography and a cleaner layout that makes navigation and content consumption effortless.
             </p>
           </div>
@@ -270,37 +292,24 @@
         <!-- Feature 6 -->
         <div class="col-lg-4 col-md-6">
           <div class="h-100 p-4 p-lg-5 rounded-4 transition-all feature-card-featured"
-            style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(217, 157, 42, 0.15);">
+            style="background: #f8f9fa; border: 1px solid #e5e7eb;">
             <div class="d-flex align-items-start gap-3 mb-3">
               <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-3"
                 style="width: 48px; height: 48px; background: rgba(217, 157, 42, 0.15); font-size: 20px; color: #d99d2a;">
                 6
               </div>
-              <h5 class="text-white mb-0" style="font-size: 18px; font-weight: 600;">Sidebar with New Menu Icons</h5>
+              <h5 class="mb-0" style="font-size: 18px; font-weight: 600; color: #343534;">Sidebar with New Menu Icons</h5>
             </div>
-            <p class="text-white-50 mb-0" style="font-size: 14px; line-height: 1.6;">
+            <p class="mb-0" style="font-size: 14px; line-height: 1.6; color: #64748b;">
               A redesigned sidebar with new app icons and company logo for a more intuitive navigation experience.
             </p>
           </div>
         </div>
       </div>
-
-      <style>
-        .feature-card-featured:hover {
-          background: rgba(217, 157, 42, 0.1) !important;
-          border-color: rgba(217, 157, 42, 0.4) !important;
-          transform: translateY(-4px);
-          box-shadow: 0 12px 40px rgba(217, 157, 42, 0.2);
-        }
-
-        .feature-card-featured:hover i {
-          transform: scale(1.1);
-        }
-      </style>
     </section>
     <!-- Enhanced visuals and elements content -->
     <section class="mb-5 position-relative overflow-hidden"
-      style="background: linear-gradient(135deg, #343534 0%, #4a4b4a 100%); border-radius: 24px; padding: 0;">
+      style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 24px; padding: 0;">
       <!-- Decorative accent -->
       <div class="position-absolute top-0 start-0 w-100"
         style="height: 4px; background: linear-gradient(90deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%);"></div>
@@ -310,18 +319,18 @@
           <div class="p-5 p-lg-5">
             <!-- Badge -->
             <div class="d-inline-block mb-4 px-3 py-1 rounded-pill"
-              style="background: rgba(217, 157, 42, 0.15); border: 1px solid #d99d2a;">
+              style="background: rgba(217, 157, 42, 0.1); border: 1px solid #d99d2a;">
               <span class="fw-semibold" style="color: #d99d2a; font-size: 13px; letter-spacing: 1px;">ADAPTIVE
                 DESIGN</span>
             </div>
 
             <!-- Heading -->
-            <h2 class="text-white mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2;">
+            <h2 class="mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2; color: #343534;">
               Fully <span style="color: #d99d2a;">Responsive Layout</span>
             </h2>
 
             <!-- Description -->
-            <p class="text-white-50 mb-5" style="font-size: 16px; line-height: 1.7;">
+            <p class="mb-5" style="font-size: 16px; line-height: 1.7; color: #64748b;">
               This theme adapts gracefully from full-scale desktop dashboards to compact mobile interfaces, preserving
               clarity, balance, and usability at every breakpoint. Whether you're managing operations from a workstation
               or checking updates on the go, the layout reshapes itself naturally—no clutter, no compromise. Every element
@@ -333,26 +342,26 @@
             <div class="row g-3">
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Fully responsive</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Fully responsive</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Fly-out hamburger menu on the left</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Fly-out hamburger menu on the left</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Fits perfectly to all screen sizes</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Fits perfectly to all screen sizes</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Quick access menu at the bottom in discuss</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Quick access menu at the bottom in discuss</h6>
                 </div>
               </div>
             </div>
@@ -371,7 +380,7 @@
             <!-- Image with glow effect -->
             <div class="position-relative">
               <div class="position-absolute top-50 start-50 translate-middle rounded-4"
-                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.15); filter: blur(60px); z-index: 0;">
+                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.1); filter: blur(60px); z-index: 0;">
               </div>
               <img class="img-fluid position-relative rounded-4" src="./img/responsive_layout.png"
                 style="border: 2px solid rgba(217, 157, 42, 0.3); z-index: 1;" alt="Responsive Layout">
@@ -382,7 +391,7 @@
     </section>
     <!-- List view -->
     <section class="mb-5 position-relative overflow-hidden"
-      style="background: linear-gradient(135deg, #343534 0%, #4a4b4a 100%); border-radius: 24px; padding: 0;">
+      style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 24px; padding: 0;">
       <!-- Decorative accent -->
       <div class="position-absolute top-0 start-0 w-100"
         style="height: 4px; background: linear-gradient(90deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%);"></div>
@@ -393,7 +402,7 @@
             <!-- Image with glow effect -->
             <div class="position-relative">
               <div class="position-absolute top-50 start-50 translate-middle rounded-4"
-                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.15); filter: blur(60px); z-index: 0;">
+                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.1); filter: blur(60px); z-index: 0;">
               </div>
               <img class="img-fluid position-relative rounded-4" src="img/list_view.png"
                 style="border: 2px solid rgba(217, 157, 42, 0.3); z-index: 1;" alt="List View">
@@ -404,18 +413,18 @@
           <div class="p-5 p-lg-5">
             <!-- Badge -->
             <div class="d-inline-block mb-4 px-3 py-1 rounded-pill"
-              style="background: rgba(217, 157, 42, 0.15); border: 1px solid #d99d2a;">
+              style="background: rgba(217, 157, 42, 0.1); border: 1px solid #d99d2a;">
               <span class="fw-semibold" style="color: #d99d2a; font-size: 13px; letter-spacing: 1px;">DATA
                 MANAGEMENT</span>
             </div>
 
             <!-- Heading -->
-            <h2 class="text-white mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2;">
+            <h2 class="mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2; color: #343534;">
               List <span style="color: #d99d2a;">View</span>
             </h2>
 
             <!-- Description -->
-            <p class="text-white-50 mb-5" style="font-size: 16px; line-height: 1.7;">
+            <p class="mb-5" style="font-size: 16px; line-height: 1.7; color: #64748b;">
               jameel backend V19 gives you the fully modified list view. This table design gives you more beauty for your
               Odoo backend. It will give you a clean layout with the new color combination and a modified font.
             </p>
@@ -424,38 +433,38 @@
             <div class="row g-3">
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Stages are Separated in View</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Stages are Separated in View</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">New Color Combination</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">New Color Combination</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Modified Font</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Modified Font</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Clean Layout</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Clean Layout</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Buttons with New Colors</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Buttons with New Colors</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Full Screen View</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Full Screen View</h6>
                 </div>
               </div>
             </div>
@@ -473,7 +482,7 @@
     </section>
     <!-- Kanban view -->
     <section class="mb-5 position-relative overflow-hidden"
-      style="background: linear-gradient(135deg, #343534 0%, #4a4b4a 100%); border-radius: 24px; padding: 0;">
+      style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 24px; padding: 0;">
       <!-- Decorative accent -->
       <div class="position-absolute top-0 start-0 w-100"
         style="height: 4px; background: linear-gradient(90deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%);"></div>
@@ -483,18 +492,18 @@
           <div class="p-5 p-lg-5">
             <!-- Badge -->
             <div class="d-inline-block mb-4 px-3 py-1 rounded-pill"
-              style="background: rgba(217, 157, 42, 0.15); border: 1px solid #d99d2a;">
+              style="background: rgba(217, 157, 42, 0.1); border: 1px solid #d99d2a;">
               <span class="fw-semibold" style="color: #d99d2a; font-size: 13px; letter-spacing: 1px;">VISUAL
                 ORGANIZATION</span>
             </div>
 
             <!-- Heading -->
-            <h2 class="text-white mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2;">
+            <h2 class="mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2; color: #343534;">
               Kanban <span style="color: #d99d2a;">Group View</span>
             </h2>
 
             <!-- Description -->
-            <p class="text-white-50 mb-5" style="font-size: 16px; line-height: 1.7;">
+            <p class="mb-5" style="font-size: 16px; line-height: 1.7; color: #64748b;">
               jameel backend gives you a fully modified kanban view with section-wise separated stages. Clean layouts
               with new color combinations and modified fonts.
             </p>
@@ -503,38 +512,38 @@
             <div class="row g-3">
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Stages Separated in View</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Stages Separated in View</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">New Color Combination</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">New Color Combination</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Modified Font</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Modified Font</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Clean Layout</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Clean Layout</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Buttons with New Colors</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Buttons with New Colors</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Full Screen View</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Full Screen View</h6>
                 </div>
               </div>
             </div>
@@ -553,7 +562,7 @@
             <!-- Image with glow effect -->
             <div class="position-relative">
               <div class="position-absolute top-50 start-50 translate-middle rounded-4"
-                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.15); filter: blur(60px); z-index: 0;">
+                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.1); filter: blur(60px); z-index: 0;">
               </div>
               <img class="img-fluid position-relative rounded-4" src="./img/kanban_view.png"
                 style="border: 2px solid rgba(217, 157, 42, 0.3); z-index: 1;" alt="Kanban View">
@@ -564,7 +573,7 @@
     </section>
     <!-- Form view -->
     <section class="mb-5 position-relative overflow-hidden"
-      style="background: linear-gradient(135deg, #343534 0%, #4a4b4a 100%); border-radius: 24px; padding: 0;">
+      style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 24px; padding: 0;">
       <!-- Decorative accent -->
       <div class="position-absolute top-0 start-0 w-100"
         style="height: 4px; background: linear-gradient(90deg, #d99d2a 0%, #f4b84a 50%, #d99d2a 100%);"></div>
@@ -574,18 +583,18 @@
           <div class="p-5 p-lg-5">
             <!-- Badge -->
             <div class="d-inline-block mb-4 px-3 py-1 rounded-pill"
-              style="background: rgba(217, 157, 42, 0.15); border: 1px solid #d99d2a;">
+              style="background: rgba(217, 157, 42, 0.1); border: 1px solid #d99d2a;">
               <span class="fw-semibold" style="color: #d99d2a; font-size: 13px; letter-spacing: 1px;">ENHANCED
                 VIEW</span>
             </div>
 
             <!-- Heading -->
-            <h2 class="text-white mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2;">
+            <h2 class="mb-4" style="font-size: 42px; font-weight: 700; line-height: 1.2; color: #343534;">
               Form <span style="color: #d99d2a;">View</span>
             </h2>
 
             <!-- Description -->
-            <p class="text-white-50 mb-5" style="font-size: 16px; line-height: 1.7;">
+            <p class="mb-5" style="font-size: 16px; line-height: 1.7; color: #64748b;">
               jameel backend gives you a fully modified form view with a full-screen experience. Clean layouts with new
               color combinations and modified fonts.
             </p>
@@ -594,50 +603,41 @@
             <div class="row g-3">
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Modified Form Style</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Modified Form Style</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Required Field Style</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Required Field Style</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Full Screen View</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Full Screen View</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">New Chatter Style</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">New Chatter Style</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">New Tab Looks</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">New Tab Looks</h6>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="d-flex align-items-center gap-3 p-3 rounded-3 transition-all feature-card"
-                  style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(217, 157, 42, 0.2);">
-                  <h6 class="text-white mb-0" style="font-size: 14px; font-weight: 600;">Status Button Style</h6>
+                  style="background: #f8f9fa; border: 1px solid #e5e7eb;">
+                  <h6 class="mb-0" style="font-size: 14px; font-weight: 600; color: #343534;">Status Button Style</h6>
                 </div>
               </div>
             </div>
-
-            <style>
-              .feature-card:hover {
-                background: rgba(217, 157, 42, 0.15) !important;
-                border-color: rgba(217, 157, 42, 0.5) !important;
-                box-shadow: 0 0 20px rgba(217, 157, 42, 0.3), 0 0 40px rgba(217, 157, 42, 0.1);
-                transform: translateY(-2px);
-              }
-            </style>
 
             <!-- CTA Button -->
             <div class="mt-5">
@@ -653,7 +653,7 @@
             <!-- Image with glow effect -->
             <div class="position-relative">
               <div class="position-absolute top-50 start-50 translate-middle rounded-4"
-                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.15); filter: blur(60px); z-index: 0;">
+                style="width: 90%; height: 90%; background: rgba(217, 157, 42, 0.1); filter: blur(60px); z-index: 0;">
               </div>
               <img class="img-fluid position-relative rounded-4" src="img/form_view.png"
                 style="border: 2px solid rgba(217, 157, 42, 0.3); z-index: 1;" alt="Form View">
