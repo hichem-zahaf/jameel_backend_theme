@@ -31,7 +31,7 @@
     },
     'images': [
         'static/description/icon.png',
-        'static/description/banner.png',
+        'static/description/banner.jpg',
     ],
     'icon': 'static/description/icon.png',
     'license': 'LGPL-3',
