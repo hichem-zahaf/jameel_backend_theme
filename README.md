@@ -42,7 +42,7 @@ This theme adapts gracefully from full-scale desktop dashboards to compact mobil
 
 ## List View
 
-![List View](static/description/img/list_view.png)
+![List View](Jameel_backend_theme/static/description/img/list_view.png)
 
 Jameel Backend V19 gives you the fully modified list view. This table design gives you more beauty for your Odoo backend with a clean layout, new color combination, and modified font.
 
@@ -56,7 +56,7 @@ Jameel Backend V19 gives you the fully modified list view. This table design giv
 
 ## Kanban Group View
 
-![Kanban View](static/description/img/kanban_view.png)
+![Kanban View](Jameel_backend_theme/static/description/img/kanban_view.png)
 
 Jameel backend gives you a fully modified kanban view with section-wise separated stages. Clean layouts with new color combinations and modified fonts.
 
@@ -70,7 +70,7 @@ Jameel backend gives you a fully modified kanban view with section-wise separate
 
 ## Form View
 
-![Form View](static/description/img/form_view.png)
+![Form View](Jameel_backend_theme/static/description/img/form_view.png)
 
 Jameel backend gives you a fully modified form view with a full-screen experience. Clean layouts with new color combinations and modified fonts.
 
