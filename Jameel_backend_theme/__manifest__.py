@@ -1,6 +1,6 @@
 {
     "name": "Jameel backend Theme",
-    "version": "18.0",
+    "version": "17.0",
     "description": "Minimalist and elegant backend "
                    "theme for Odoo 18, Backend Theme",
     "summary": "Jameel Backend Theme is an attractive theme for backend",
